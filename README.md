@@ -13,4 +13,6 @@
 
 [با همه لینکای اشتراک پروکسی لایت](https://github.com/coldwater-10/cloudflare-workers/blob/main/Clash/lite.js) (با کد کمتر اگه بالاییا روی گوشی درست سیو نشد)
 
-کد اصلی ورکر رو [وحید](https://github.com/vfarid) نوشته من فقط تغییراتی دادم
+©️ کد اصلی ورکر رو [وحید](https://github.com/vfarid) نوشته من فقط تغییراتی دادم
+
+⚠️ پروکسیای سریع فعلا روی کلش مشکل داره
