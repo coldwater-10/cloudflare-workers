@@ -22,12 +22,14 @@ const subLinks = [
 ]
 const cnfLinks = [
   "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/sub/sub_merge.txt",
-  "https://raw.githubusercontent.com/AlienVPN402/AlienVPN402-subscribe-servers/main/index.html",
+  "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.txt",
   "https://raw.githubusercontent.com/hossein-mohseni/Free-V2ray-Config/main/configs.txt",
   "https://raw.githubusercontent.com/Bardiafa/Free-V2ray-Config/main/Splitted/vmess.txt",
   "https://raw.githubusercontent.com/Bardiafa/Free-V2ray-Config/main/Splitted/trojan.txt",
   "https://raw.githubusercontent.com/Bardiafa/Free-V2ray-Config/main/Splitted/ss.txt",
-  "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.txt",
+  "https://raw.githubusercontent.com/AlienVPN402/AlienVPN402-subscribe-servers/main/index.html",
+  "https://wfi.sahnama.com/0sbAhOvzhXKuLqBkyhf0qBAZ8MWIh/1e5fba98-deac-4fae-ac2f-c055e7810668/all.txt",
+  "https://sahnama.com/s9No4vnWft1Q/df68f678-62c3-4799-91a8-4d301e8cf565/all.txt",
   "https://raw.githubusercontent.com/LonUp/NodeList/main/V2RAY/Latest.txt",
   "https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all"
 ]
