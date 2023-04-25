@@ -53,6 +53,95 @@
 
 [با پروکسیای سریع](https://github.com/coldwater-10/cloudflare-workers/tree/main/v2rayN%20%26%20v2rayNG/fast.js)
 
+
+## توضیحات نحوه استفاده از ورکر
+وقتی کد یکی از این ورکر ها رو توی سایت [کلودفلر](https://dash.cloudflare.com) سیو کردین (قبل جایگذاری حتما کد پیشفرض رو پاک کنین)
+
+بعد به آخر آدرس ورکر برای کلش و کلش متا باید clash برای بقیه اپ ها باید sub رو اضافه کنین و بعدش هم مخفف اپراتورتون یا آیپی تمیز بزارین
+
+نمونه برای کلش
+
+https://***.workers.dev/clash/
+
+https://***.workers.dev/clash/MCI همراه اول 🔰⚛️ 4️⃣
+
+https://***.workers.dev/clash/RTL رایتل 🔰 ⚛️
+
+https://***.workers.dev/clash/AST  آسیاتک 🔰⚛️
+
+https://***.workers.dev/clash/IRC ایرانسل  🔰⚛️ 4️⃣
+
+https://***.workers.dev/clash/SHT شاتل 🔰⚛️ 4️⃣
+
+https://***.workers.dev/clash/MKB مخابرات 🔰⚛️ 4️⃣
+
+https://***.workers.dev/clash/MBT میبن‌نت 🔰⚛️
+
+https://***.workers.dev/clash/ZTL زیتل 🔰⚛️
+
+https://***.workers.dev/clash/PRS پارس‌آنلاین 🔰⚛️
+
+https://***.workers.dev/clash/HWB های‌وب 🔰⚛️
+
+https://***.workers.dev/clash/PIS پیشگامان 🔰⚛️
+
+https://***.workers.dev/clash/DAT رهام داتک
+
+https://***.workers.dev/clash/SAB صبانت 4️⃣
+
+https://***.workers.dev/clash/ASR عصر تلکام
+
+https://***.workers.dev/clash/FAN فن آوا 🔰⚛️
+
+https://***.workers.dev/clash/SFR صفرویک
+
+https://***.workers.dev/clash/DID دیده بان نت 🔰⚛️
+
+https://***.workers.dev/clash/LAY لایزر
+
+https://***.workers.dev/clash/MAH ماهان‌نت
+
+https://***.workers.dev/clash/TAK تک‌نت
+
+https://***.workers.dev/clash/PET پتیاک
+
+https://***.workers.dev/clash/AND اندیشه‌ سبز 🔰⚛️
+
+https://***.workers.dev/clash/RES رسپینا 🔰⚛️
+
+https://***.workers.dev/clash/AFR افرانت 🔰⚛️
+
+https://***.workers.dev/clash/ARA آراکس  🔰⚛️
+
+https://***.workers.dev/clash/SAM سامانتل 🔰⚛️
+
+https://***.workers.dev/clash/APT آپتل 🔰⚛️
+
+https://***.workers.dev/clash/FNP فناپ‌تلکام 🔰⚛️
+
+https://***.workers.dev/clash/RYN رای‌نت 🔰⚛️
+
+https://***.workers.dev/clash/IPV6 6️⃣
+
+https://***.workers.dev/clash/IRCF 🔰
+
+https://***.workers.dev/clash/ENG سایتای خارجی 🌐
+
+https://***.workers.dev/clash/FA سایتای ایرانی 🌐
+
+https://***.workers.dev/clash/ALL همه آیپی ها 4️⃣
+
+https://***.workers.dev/clash/TEST   همه ساب دامین ها🔰⚛️
+
+https://***.workers.dev/clash/PLUS کلشون 🔰⚛️ 4️⃣ 🌐
+
+
+4️⃣ آیپی ورژن 4 دارن
+6️⃣ آیپی ورژن 6 دارن
+🔰ساب دامین [ircf](https://ircf.space/list.php) دارن
+⚛️کل ساب دامین ها
+🌐 دامین سایت پشت کلودفلر دارن
+
 # بقیه ورکرا
 
 ## لیست جمع آوری کننده آیپی وحید
