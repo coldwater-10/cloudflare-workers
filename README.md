@@ -146,7 +146,7 @@ https://***.workers.dev/clash/PLUS کلشون 🔰⚛️ 4️⃣ 🌐
 
 🌐 دامین سایت پشت کلودفلر دارن
 
-# بقیه ورکرا
+# :بقیه ورکرا
 
 ## لیست جمع آوری کننده آیپی [وحید](https://github.com/vfarid/cf-clean-ips)
  [نمونه خروجی](https://cf-clean-ips.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare-workers/tree/main/Other/cf-clean-ips.js)
