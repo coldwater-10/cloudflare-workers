@@ -56,31 +56,31 @@
 # بقیه ورکرا
 
 ## لیست جمع آوری کننده آیپی وحید
- [نمونه خروجی](https://cf-clean-ips.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare.-workers/blob/main/cf-clean-ips.js)
+ [نمونه خروجی](https://cf-clean-ips.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare-workers/tree/main/Other/cf-clean-ips.js)
 
 ## همه آیپی های لیستم برای اسکنر مرتضی
- [نمونه خروجی](https://list-ipv4-for-wincfscaner.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare.-workers/blob/main/list-ipv4-for-winCFScaner.js)
+ [نمونه خروجی](https://list-ipv4-for-wincfscaner.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare-workers/tree/main/Other/list-ipv4-for-winCFScaner.js)
 
 ## لیست دامین سایتای پشت کلودفلر
- [نمونه خروجی همشون](https://domain-all-sites-behind-cf.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare.-workers/blob/main/domain-all-sites-behind-cf.js)
+ [نمونه خروجی همشون](https://domain-all-sites-behind-cf.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare-workers/tree/main/Other/domain-all-sites-behind-cf.js)
 
- [نمونه خروجی ایرانیا](https://domain-ir-sites-behind-cf.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare.-workers/blob/main/domain-ir-sites-behind-cf.js)
+ [نمونه خروجی ایرانیا](https://domain-ir-sites-behind-cf.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare-workers/tree/main/Other/domain-ir-sites-behind-cf.js)
 
- [نمونه خروجی خارجیا](https://domain-foreign-sites-behind-cf.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare.-workers/blob/main/domain-foreign-sites-behind-cf.js)
+ [نمونه خروجی خارجیا](https://domain-foreign-sites-behind-cf.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare-workers/tree/main/Other/domain-foreign-sites-behind-cf.js)
 
 ## لیست آیپی ورژن 4 سایتای پشت کلودفلر
-  [نمونه خروجی همشون](https://ipv4-all.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare.-workers/blob/main/ipv4-all.js)
+  [نمونه خروجی همشون](https://ipv4-all.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare-workers/tree/main/Other/ipv4-all.js)
 
- [نمونه خروجی ایرانیا](https://ipv4-ir.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare.-workers/blob/main/ipv4-ir.js)
+ [نمونه خروجی ایرانیا](https://ipv4-ir.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare-workers/tree/main/Other/ipv4-ir.js)
 
- [نمونه خروجی خارجیا](https://ipv4-foreign.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare.-workers/blob/main/ipv4-foreign.js)
+ [نمونه خروجی خارجیا](https://ipv4-foreign.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare-workers/tree/main/Other/ipv4-foreign.js)
 
 ## لیست آیپی ورژن 6 سایتای پشت کلودفلر
-  [نمونه خروجی همشون](https://ipv6-all.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare.-workers/blob/main/ipv6-all.js)
+  [نمونه خروجی همشون](https://ipv6-all.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare-workers/tree/main/Other/ipv6-all.js)
 
- [نمونه خروجی ایرانیا](https://ipv6-ir.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare.-workers/blob/main/ipv6-ir.js)
+ [نمونه خروجی ایرانیا](https://ipv6-ir.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare-workers/tree/main/Other/ipv6-ir.js)
 
- [نمونه خروجی خارجیا](https://ipv6-foreign.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare.-workers/blob/main/ipv6-foreign.js)
+ [نمونه خروجی خارجیا](https://ipv6-foreign.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare-workers/tree/main/Other/ipv6-foreign.js)
 
 
 
