@@ -142,7 +142,7 @@ https://***.workers.dev/clash/PLUS کلشون 🔰⚛️ 4️⃣ 🌐
 
 🔰ساب دامین [ircf](https://ircf.space/list.php) دارن
 
-⚛️کل ساب دامین ها
+⚛️[کل ساب دامین ها](https://github.com/vfarid/cf-clean-ips/blob/main/providers.json)
 
 🌐 دامین سایت پشت کلودفلر دارن
 
