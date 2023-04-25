@@ -42,3 +42,13 @@
 
 
 [با پروکسیای سریع](https://github.com/coldwater-10/cloudflare-workers/tree/main/Nekobox/all.js)
+
+
+## انواع ورکر برای v2rayN و v2rayNG:
+[با پروکسیای فرینود](https://github.com/coldwater-10/cloudflare-workers/tree/main/v2rayN%20%26%20v2rayNG/freenode.js)
+(باید از [سایت فرینود](https://getafreenode.com/?inviter=82060F61-1C03-418D-99D4-D555CECB2FF4) لینک اشتراک بگیرین و چندبار توی کد جایگزین کنینش)
+
+[با همه لینکای اشتراک پروکسی](https://github.com/coldwater-10/cloudflare-workers/tree/main/v2rayN%20%26%20v2rayNG/all.js)
+
+
+[با پروکسیای سریع](https://github.com/coldwater-10/cloudflare-workers/tree/main/v2rayN%20%26%20v2rayNG/all.js)
