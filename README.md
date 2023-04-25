@@ -2,7 +2,6 @@
 
 ©️ کد اصلی ورکرو [وحید](https://github.com/vfarid) نوشته من فقط تغییراتی دادم
 
-⚠️ پروکسیای سریع فعلا روی کلش مشکل داره
 
 ## انواع ورکر برای کلش:
 [با پروکسیای فرینود](https://github.com/coldwater-10/cloudflare-workers/blob/main/Clash/freenode.js)
