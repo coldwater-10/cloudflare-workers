@@ -32,3 +32,13 @@
 [با همه لینکای اشتراک پروکسی پلاس](https://github.com/coldwater-10/cloudflare-workers/tree/main/Clash%20Meta/plus.js) (انواع مختلف نوع اتصال)
 
 [با همه لینکای اشتراک پروکسی لایت](https://github.com/coldwater-10/cloudflare-workers/tree/main/Clash%20Meta/lite.js) (با کد کمتر اگه بالاییا روی گوشی درست سیو نشد)
+
+
+## انواع ورکر برای نکوباکس:
+[با پروکسیای فرینود](https://github.com/coldwater-10/cloudflare-workers/tree/main/Nekobox/freenode.js)
+(باید از [سایت فرینود](https://getafreenode.com/?inviter=82060F61-1C03-418D-99D4-D555CECB2FF4) لینک اشتراک بگیرین و چندبار توی کد جایگزین کنینش)
+
+[با همه لینکای اشتراک پروکسی](https://github.com/coldwater-10/cloudflare-workers/tree/main/Nekobox/all.js)
+
+
+[با پروکسیای سریع](https://github.com/coldwater-10/cloudflare-workers/tree/main/Nekobox/all.js)
