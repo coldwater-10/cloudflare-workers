@@ -175,7 +175,7 @@ https://***.workers.dev/clash/PLUS کلشون 🔰⚛️ 4️⃣ 🌐
 
  [نمونه خروجی خارجیا](https://ipv6-foreign.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare-workers/tree/main/Other/ipv6-foreign.js)
 
-©️ اطلاعاتش رو از گیتهاب [hossein mohseni](https://github.com/vfarid) میگیره
+©️ اطلاعاتش رو از گیتهاب [hossein mohseni](https://github.com/hossein-mohseni/CF-Web) میگیره
 
 
 
