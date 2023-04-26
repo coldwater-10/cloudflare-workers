@@ -10,7 +10,7 @@ async function handleRequest(request) {
   const ipv4Regex = /\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\b/g;
   const ipv4Addresses = text.match(ipv4Regex) || [];
 
-  const formattedAddresses = ipv4Addresses.map(ip => ip);
+  const formattedAddresses = ipv4Addresses.map(ip => "0 - 0 - " + ip);
 
   return new Response(formattedAddresses.join("\n"), {
     headers: { "content-type": "text/plain" }
