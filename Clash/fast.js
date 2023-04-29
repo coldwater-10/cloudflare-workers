@@ -1,4 +1,4 @@
-const maxConfigItems = 500
+const maxConfigItems = 600
 const maxPerType = 300
 const includeOriginalConfigs = 0
 
