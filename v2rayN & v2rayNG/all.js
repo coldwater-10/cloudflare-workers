@@ -10,14 +10,23 @@ const subLinks = [
   "https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/v2ray.txt",
   "https://raw.githubusercontent.com/xiyaowong/freeFQ/main/v2ray",
   "https://raw.githubusercontent.com/iwxf/free-v2ray/master/index.html",
-  "https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg",
-  "https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2",
   "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt",
+  "https://raw.githubusercontent.com/vpei/Free-Node-Merge/main/o/node.txt",
+  "https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg",
+  "https://raw.fastgit.org/codingbox/Free-Node-Merge/main/node.txt",
+  "https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2",
   "https://raw.githubusercontent.com/ssrsub/ssr/master/V2Ray",
   "https://raw.githubusercontent.com/ssrsub/ssr/master/ss-sub",
   "https://raw.githubusercontent.com/ssrsub/ssr/master/trojan",
-  "https://raw.fastgit.org/codingbox/Free-Node-Merge/main/node.txt",
-  "https://raw.githubusercontent.com/vpei/Free-Node-Merge/main/o/node.txt",
+  "https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray",
+  "https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1",
+  "https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription2",
+  "https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3",
+  "https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription4",
+  "https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription5",
+  "https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription6",
+  "https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription7",
+  "https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription8",
   "https://sub.pmsub.me/base64"
 ]
 const cnfLinks = [
@@ -30,6 +39,7 @@ const cnfLinks = [
   "https://raw.githubusercontent.com/AlienVPN402/AlienVPN402-subscribe-servers/main/index.html",
   "https://wfi.sahnama.com/0sbAhOvzhXKuLqBkyhf0qBAZ8MWIh/1e5fba98-deac-4fae-ac2f-c055e7810668/all.txt",
   "https://sahnama.com/s9No4vnWft1Q/df68f678-62c3-4799-91a8-4d301e8cf565/all.txt",
+  "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list_raw.txt",
   "https://raw.githubusercontent.com/LonUp/NodeList/main/V2RAY/Latest.txt",
   "https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all"
 ]
