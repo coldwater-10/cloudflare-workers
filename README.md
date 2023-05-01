@@ -86,7 +86,7 @@ https://***.workers.dev/clash/PIS پیشگامان 🔰⚛️
 
 https://***.workers.dev/clash/DAT رهام داتک
 
-https://***.workers.dev/clash/SAB صبانت 4️⃣
+https://***.workers.dev/clash/SAB صبانت 4️⃣🔰 
 
 https://***.workers.dev/clash/ASR عصر تلکام
 
