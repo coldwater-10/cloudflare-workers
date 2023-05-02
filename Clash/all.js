@@ -45,7 +45,7 @@ const cnfLinks = [
   "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.txt",
   "https://raw.githubusercontent.com/hossein-mohseni/Free-V2ray-Config/main/All_Configs_Sub.txt",
   "https://raw.githubusercontent.com/AlienVPN402/AlienVPN402-subscribe-servers/main/index.html",
-  "https://wfi.sahnama.com/nCRTlqXjXo20Pgr0R/61280f80-cd25-4c7b-8e5a-b1560617047a/all.txt,
+  "https://wfi.sahnama.com/nCRTlqXjXo20Pgr0R/61280f80-cd25-4c7b-8e5a-b1560617047a/all.txt",
   "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list_raw.txt",
   "https://raw.githubusercontent.com/LonUp/NodeList/main/V2RAY/Latest.txt",
   "https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all"
