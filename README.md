@@ -106,7 +106,7 @@ https://***.workers.dev/clash/PET پتیاک
 
 https://***.workers.dev/clash/AND اندیشه‌ سبز 🔰⚛️
 
-https://***.workers.dev/clash/RES رسپینا 🔰⚛️
+https://***.workers.dev/clash/RES رسپینا  🔰⚛️ 4️⃣
 
 https://***.workers.dev/clash/AFR افرانت 🔰⚛️
 
