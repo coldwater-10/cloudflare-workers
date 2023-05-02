@@ -30,18 +30,22 @@ const subLinks = [
   "https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription6",
   "https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription7",
   "https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription8",
-  "https://sub.pmsub.me/base64"
+  "https://sub.pmsub.me/base64",
+  "https://proxy.yugogo.xyz/vmess/sub",
+  "https://proxy.yugogo.xyz/trojan/sub",
+  "https://free.iam7.tk/trojan/sub",
+  "https://free.iam7.tk/vmess/sub",
+  "https://free.jingfu.cf/vmess/sub",
+  "https://free.jingfu.cf/trojan/sub",
+  "https://raw.githubusercontent.com/learnhard-cn/free_proxy_ss/main/free",
+  "https://raw.githubusercontent.com/learnhard-cn/free_proxy_ss/main/v2ray/v2raysub"
 ]
 const cnfLinks = [
   "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/sub/sub_merge.txt",
   "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.txt",
   "https://raw.githubusercontent.com/hossein-mohseni/Free-V2ray-Config/main/All_Configs_Sub.txt",
-  "https://raw.githubusercontent.com/Bardiafa/Free-V2ray-Config/main/Splitted/vmess.txt",
-  "https://raw.githubusercontent.com/Bardiafa/Free-V2ray-Config/main/Splitted/trojan.txt",
-  "https://raw.githubusercontent.com/Bardiafa/Free-V2ray-Config/main/Splitted/ss.txt",
   "https://raw.githubusercontent.com/AlienVPN402/AlienVPN402-subscribe-servers/main/index.html",
-  "https://wfi.sahnama.com/0sbAhOvzhXKuLqBkyhf0qBAZ8MWIh/1e5fba98-deac-4fae-ac2f-c055e7810668/all.txt",
-  "https://sahnama.com/s9No4vnWft1Q/df68f678-62c3-4799-91a8-4d301e8cf565/all.txt",
+  "https://wfi.sahnama.com/nCRTlqXjXo20Pgr0R/61280f80-cd25-4c7b-8e5a-b1560617047a/all.txt,
   "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list_raw.txt",
   "https://raw.githubusercontent.com/LonUp/NodeList/main/V2RAY/Latest.txt",
   "https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all"
