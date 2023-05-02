@@ -35,7 +35,7 @@ const subLinks = [
 const cnfLinks = [
   "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/sub/sub_merge.txt",
   "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.txt",
-  "https://raw.githubusercontent.com/hossein-mohseni/Free-V2ray-Config/main/configs.txt",
+  "https://raw.githubusercontent.com/hossein-mohseni/Free-V2ray-Config/main/All_Configs_Sub.txt",
   "https://raw.githubusercontent.com/Bardiafa/Free-V2ray-Config/main/Splitted/vmess.txt",
   "https://raw.githubusercontent.com/Bardiafa/Free-V2ray-Config/main/Splitted/trojan.txt",
   "https://raw.githubusercontent.com/Bardiafa/Free-V2ray-Config/main/Splitted/ss.txt",
