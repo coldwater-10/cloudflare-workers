@@ -64,7 +64,7 @@ https://***.workers.dev/clash/170.114.45.122 آیپی تمیز یا ساب دا�
 
 https://***.workers.dev/clash/MCI همراه اول 🔰⚛️ 4️⃣
 
-https://***.workers.dev/clash/RTL رایتل 🔰 ⚛️
+https://***.workers.dev/clash/RTL رایتل 🔰 ⚛️4️⃣
 
 https://***.workers.dev/clash/AST  آسیاتک 🔰⚛️
 
