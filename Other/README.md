@@ -3,8 +3,11 @@
 ##  تبدیل لیست جمع آوری کننده آیپی وحید برای ورکرای کانفیگ
  [نمونه خروجی](https://cf-clean-ips.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare-workers/tree/main/Other/cf-clean-ips.js)
 
-## همه آیپی های لیستم برای اسکنر مرتضی
+## تبدیل فرمت همه آیپی های لیستم برای اسکنر مرتضی
  [نمونه خروجی](https://list-ipv4-for-wincfscaner.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare-workers/tree/main/Other/list-ipv4-for-winCFScaner.js)
+
+##  تبدیل فرمت لیست جمع آوری کننده آیپی وحید برای اسکنر مرتضی
+ [نمونه خروجی](https://vahid-iplist-for-morteza-scanner.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://raw.githubusercontent.com/coldwater-10/cloudflare-workers/main/Other/Vahid's%20IP%20list%20for%20Morteza%20scanner.js)
 
 ## لیست دامین سایتای پشت کلودفلر
  [نمونه خروجی همشون](https://domain-all-sites-behind-cf.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare-workers/tree/main/Other/domain-all-sites-behind-cf.js)
