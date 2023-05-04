@@ -57,82 +57,44 @@
 وقتی کد یکی از این ورکر ها رو توی سایت [کلودفلر](https://dash.cloudflare.com) سیو کردین (قبل جایگذاری حتما کد پیشفرض رو پاک کنین)
 
 بعد به آخر آدرس ورکر برای کلش و کلش متا باید clash برای بقیه اپ ها باید sub رو اضافه کنین و بعدش هم مخفف اپراتورتون یا آیپی تمیز بزارین
-
-نمونه برای کلش:
-
-https://***.workers.dev/clash/170.114.45.122 آیپی تمیز یا ساب دامین
-
-https://***.workers.dev/clash/MCI همراه اول 🔰⚛️ 4️⃣
-
-https://***.workers.dev/clash/RTL رایتل 🔰 ⚛️4️⃣
-
-https://***.workers.dev/clash/AST  آسیاتک 🔰⚛️
-
-https://***.workers.dev/clash/IRC ایرانسل  🔰⚛️ 4️⃣
-
-https://***.workers.dev/clash/SHT شاتل 🔰⚛️ 4️⃣
-
-https://***.workers.dev/clash/MKB مخابرات 🔰⚛️ 4️⃣
-
-https://***.workers.dev/clash/MBT میبن‌نت 🔰⚛️
-
-https://***.workers.dev/clash/ZTL زیتل 🔰⚛️
-
-https://***.workers.dev/clash/PRS پارس‌آنلاین 🔰⚛️
-
-https://***.workers.dev/clash/HWB های‌وب 🔰⚛️
-
-https://***.workers.dev/clash/PIS پیشگامان 🔰⚛️
-
-https://***.workers.dev/clash/DAT رهام داتک
-
-https://***.workers.dev/clash/SAB صبانت 4️⃣🔰 
-
-https://***.workers.dev/clash/ASR عصر تلکام
-
-https://***.workers.dev/clash/FAN فن آوا 🔰⚛️
-
-https://***.workers.dev/clash/SFR صفرویک
-
-https://***.workers.dev/clash/DID دیده بان نت 🔰⚛️
-
-https://***.workers.dev/clash/LAY لایزر
-
-https://***.workers.dev/clash/MAH ماهان‌نت
-
-https://***.workers.dev/clash/TAK تک‌نت
-
-https://***.workers.dev/clash/PET پتیاک
-
-https://***.workers.dev/clash/AND اندیشه‌ سبز 🔰⚛️
-
-https://***.workers.dev/clash/RES رسپینا  🔰⚛️ 4️⃣
-
-https://***.workers.dev/clash/AFR افرانت 🔰⚛️
-
-https://***.workers.dev/clash/ARA آراکس  🔰⚛️
-
-https://***.workers.dev/clash/SAM سامانتل 🔰⚛️
-
-https://***.workers.dev/clash/APT آپتل 🔰⚛️
-
-https://***.workers.dev/clash/FNP فناپ‌تلکام 🔰⚛️
-
-https://***.workers.dev/clash/RYN رای‌نت 🔰⚛️
-
-https://***.workers.dev/clash/IPV6 6️⃣
-
-https://***.workers.dev/clash/IRCF 🔰
-
-https://***.workers.dev/clash/ENG سایتای خارجی 🌐
-
-https://***.workers.dev/clash/FA سایتای ایرانی 🌐
-
-https://***.workers.dev/clash/ALL همه آیپی ها 4️⃣
-
-https://***.workers.dev/clash/TEST   همه ساب دامین ها🔰⚛️
-
-https://***.workers.dev/clash/PLUS کلشون 🔰⚛️ 4️⃣ 🌐
+| مخفف |  نمونه برای بقیه کلاینت ها | نمونه برای کلش | علامت ها |
+| --- | --- | --- | --- |
+| همراه اول | https://***.workers.dev/sub/MCI | https://***.workers.dev/clash/MCI | 🔰⚛️ 4️⃣ |
+| رایتل | https://***.workers.dev/sub/RTL | https://***.workers.dev/clash/RTL | 🔰⚛️ 4️⃣ |
+| آسیاتک | https://***.workers.dev/sub/AST | https://***.workers.dev/clash/AST | 🔰⚛️ |
+| ایرانسل | https://***.workers.dev/sub/IRC | https://***.workers.dev/clash/IRC | 🔰⚛️ 4️⃣ |
+| شاتل | https://***.workers.dev/sub/SHT | https://***.workers.dev/clash/SHT | 🔰⚛️ 4️⃣ |
+| مخابرات | https://***.workers.dev/sub/MKB | https://***.workers.dev/clash/MKB | 🔰⚛️ 4️⃣ |
+| مبین نت | https://***.workers.dev/sub/MBT | https://***.workers.dev/clash/MBT | 🔰⚛️ |
+| زیتل | https://***.workers.dev/sub/ZTL | https://***.workers.dev/clash/ZTL | 🔰⚛️ |
+| پارس آنلاین | https://***.workers.dev/sub/PRS | https://***.workers.dev/clash/PRS | 🔰⚛️ |
+| های وب | https://***.workers.dev/sub/HWB | https://***.workers.dev/clash/HWB | 🔰⚛️ |
+| پیشگامان | https://***.workers.dev/sub/PIS | https://***.workers.dev/clash/PIS | 🔰 |
+| رهام داتک | https://***.workers.dev/sub/DAT | https://***.workers.dev/clash/DAT |  |
+| صبا نت | https://***.workers.dev/sub/SAB | https://***.workers.dev/clash/SAB | 🔰 4️⃣ |
+| عصر تلکام | https://***.workers.dev/sub/ASR | https://***.workers.dev/clash/ASR |  |
+| فن آوا | https://***.workers.dev/sub/FAN | https://***.workers.dev/clash/FAN | 🔰 |
+| صفر و یک | https://***.workers.dev/sub/SFR | https://***.workers.dev/clash/SFR |  |
+| دیده بان نت| https://***.workers.dev/sub/DID | https://***.workers.dev/clash/DID | 🔰 |
+| لایزر | https://***.workers.dev/sub/LAY | https://***.workers.dev/clash/LAY |  |
+| ماهان نت| https://***.workers.dev/sub/MAH | https://***.workers.dev/clash/MAH |  |
+| تکنت| https://***.workers.dev/sub/TAK | https://***.workers.dev/clash/TAK |  |
+| پتیاک| https://***.workers.dev/sub/PET | https://***.workers.dev/clash/PET |  |
+| اندیشه سبز | https://***.workers.dev/sub/AND | https://***.workers.dev/clash/AND | 🔰 |
+| رسپینا | https://***.workers.dev/sub/RES | https://***.workers.dev/clash/RES | 🔰 4️⃣ |
+| افرانت | https://***.workers.dev/sub/AFR | https://***.workers.dev/clash/AFR | 🔰 |
+| آراکس | https://***.workers.dev/sub/ARA | https://***.workers.dev/clash/ARA | 🔰 |
+| سامانتل | https://***.workers.dev/sub/SAM | https://***.workers.dev/clash/SAM | 🔰 |
+| آپتل | https://***.workers.dev/sub/APT | https://***.workers.dev/clash/APT | 🔰 |
+| فناپ تلکام | https://***.workers.dev/sub/FNP | https://***.workers.dev/clash/FNP | 🔰 |
+| راینت | https://***.workers.dev/sub/RYN | https://***.workers.dev/clash/RYN | 🔰 |
+| IPV6 | https://***.workers.dev/sub/IPV6 | https://***.workers.dev/clash/IPV6 | 6️⃣ |
+| IRCF | https://***.workers.dev/sub/IRCF | https://***.workers.dev/clash/IRCF | 🔰 |
+| سایتای خارجی | https://***.workers.dev/sub/ENG | https://***.workers.dev/clash/ENG | 🌐 |
+| سایتای ایرانی | https://***.workers.dev/sub/FA | https://***.workers.dev/clash/FA | 🌐 |
+| همه آیپی ها | https://***.workers.dev/sub/ALL | https://***.workers.dev/clash/ALL | 4️⃣ |
+| همه سابدامین ها | https://***.workers.dev/sub/TEST | https://***.workers.dev/clash/TEST | 🔰⚛️|
+| کلشون | https://***.workers.dev/sub/PLUS | https://***.workers.dev/clash/PLUS | 🌐🔰⚛️ 4️⃣ |
 
 
 4️⃣ آیپی ورژن 4 دارن
@@ -186,4 +148,3 @@ https://***.workers.dev/clash/PLUS کلشون 🔰⚛️ 4️⃣ 🌐
     <a href="https://twitter.com/coldwater_10"><img src="https://cdn.dribbble.com/users/2652449/screenshots/14764078/media/2b620382444946ce84aac0a132c40063.gif" alt="Twitter" width="100" height="100"></a>
     <a href="https://www.tvtime.com/en/user/43351079/profile"><img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTFhMDk5NzJlYzdmZTJjMDM2Y2MzMjBkOTVkODAxM2FjMTdjZGMwNSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/lj1ghwUoflkw2F3o0T/giphy.gif" alt="TvTime" width="100" height="100"></a>
 </div>
-
