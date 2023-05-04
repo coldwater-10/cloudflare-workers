@@ -1,6 +1,6 @@
 # Vpnclashfa
 
-## لیست جمع آوری کننده آیپی وحید
+## تبدیل لیست جمع آوری کننده آیپی وحید
  [نمونه خروجی](https://cf-clean-ips.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare-workers/tree/main/Other/cf-clean-ips.js)
 
 ## همه آیپی های لیستم برای اسکنر مرتضی
