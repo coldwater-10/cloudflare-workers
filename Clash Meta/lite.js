@@ -357,84 +357,65 @@ proxies:
 ${configList.map(cnf => "  - " + JSON.stringify(cnf)).join("\n")}
 
 proxy-groups:
-
   - name: 📶 انتخاب نوع اتصال
     type: select
     proxies:
-      - UrlTest 📍
-      - Fallback ➡️
-      - LoadBalance(ch) ♻️
-      - LoadBalance(rr) ⏳
-      - select 🤏🏻
-      - DIRECT
-      - REJECT
-
-  - name: select 🤏🏻
+      - خودکار (بهترین پینگ) 🤖
+      - دستی 🤏🏻
+      - ⛔ قطع اینترنت
+      - 🛡️ بدون فیلترشکن
+  - name: دستی 🤏🏻
     type: select
     proxies:
 ${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
-
-  - name: UrlTest 📍
+  - name: خودکار (بهترین پینگ) 🤖
     type: url-test
     url: http://clients3.google.com/generate_204
     interval: 300
     proxies:
 ${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
-
-  - name: Fallback ➡️
-    type: fallback
-    url: http://clients3.google.com/generate_204
-    interval: 300
-    proxies:
-${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
-
-  - name: LoadBalance(ch) ♻️
-    type: load-balance
-    strategy: consistent-hashing
-    url: http://clients3.google.com/generate_204
-    interval: 300
-    proxies:
-${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
-
-  - name: LoadBalance(rr) ⏳
-    type: load-balance
-    strategy: round-robin
-    url: http://clients3.google.com/generate_204
-    interval: 300
-    tolerance: 100
-    proxies:
-${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
-
-  - name: 🎮 استیم
+  - name: 🇮🇷 سایتای ایرانی
     type: select
     proxies:
-      - DIRECT
-      - REJECT
-      - 📶 انتخاب نوع اتصال
-  - name: 🛑 رهگیری جهانی
-    type: select
-    proxies:
-      - REJECT
-      - DIRECT
-      - 📶 انتخاب نوع اتصال
-  - name: 🍃 تصفیه برنامه
-    type: select
-    proxies:
-      - REJECT
-      - DIRECT
+      - 🛡️ بدون فیلترشکن
+      - 🚫 اجازه ندادن
       - 📶 انتخاب نوع اتصال
   - name: 🆎 تبلیغات
     type: select
     proxies:
-      - REJECT
-      - DIRECT
+      - 🚫 اجازه ندادن
+      - 🛡️ بدون فیلترشکن
       - 📶 انتخاب نوع اتصال
-  - name: 🇮🇷 سایتای ایرانی
+  - name: 🍃 تصفیه برنامه
+    type: select
+    proxies:
+      - 🚫 اجازه ندادن
+      - 🛡️ بدون فیلترشکن
+      - 📶 انتخاب نوع اتصال
+  - name: 🛑 رهگیری جهانی
+    type: select
+    proxies:
+      - 🚫 اجازه ندادن
+      - 🛡️ بدون فیلترشکن
+      - 📶 انتخاب نوع اتصال
+  - name: 🎮 استیم
+    type: select
+    proxies:
+      - 🛡️ بدون فیلترشکن
+      - 🚫 اجازه ندادن
+      - 📶 انتخاب نوع اتصال
+  - name: 🛡️ بدون فیلترشکن
     type: select
     proxies:
       - DIRECT
+  - name: ⛔ قطع اینترنت
+    type: select
+    proxies:
       - REJECT
-      - 📶 انتخاب نوع اتصال
+  - name: 🚫 اجازه ندادن
+    type: select
+    proxies:
+      - REJECT
 
 rules:
   - DOMAIN-SUFFIX,ir,🇮🇷 سایتای ایرانی
