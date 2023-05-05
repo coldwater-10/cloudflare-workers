@@ -13,7 +13,7 @@
 [با پروکسیای سریع](https://github.com/coldwater-10/cloudflare-workers/blob/main/Clash/fast.js)
 
 
-[با همه لینکای اشتراک پروکسی پلاس](https://github.com/coldwater-10/cloudflare-workers/blob/main/Clash/plus.js) (انواع مختلف نوع اتصال)
+[با همه لینکای اشتراک پروکسی پلاس](https://github.com/coldwater-10/cloudflare-workers/blob/main/Clash/plus.js) (انواع مختلف نوع انتخاب پروکسی)
 
 [با همه لینکای اشتراک پروکسی لایت](https://github.com/coldwater-10/cloudflare-workers/blob/main/Clash/lite.js) (با کد کمتر اگه بالاییا روی گوشی درست سیو نشد)
 
@@ -28,7 +28,7 @@
 [با پروکسیای سریع](https://github.com/coldwater-10/cloudflare-workers/tree/main/Clash%20Meta/fast.js)
 
 
-[با همه لینکای اشتراک پروکسی پلاس](https://github.com/coldwater-10/cloudflare-workers/tree/main/Clash%20Meta/plus.js) (انواع مختلف نوع اتصال)
+[با همه لینکای اشتراک پروکسی پلاس](https://github.com/coldwater-10/cloudflare-workers/tree/main/Clash%20Meta/plus.js) (انواع مختلف نوع انتخاب پروکسی)
 
 [با همه لینکای اشتراک پروکسی لایت](https://github.com/coldwater-10/cloudflare-workers/tree/main/Clash%20Meta/lite.js) (با کد کمتر اگه بالاییا روی گوشی درست سیو نشد)
 
