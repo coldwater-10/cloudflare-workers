@@ -334,7 +334,8 @@ dns:
     - tls://dns.rubyfish.cn:853
     - tls://dot.pub:853
   fallback-filter:
-    geoip: false
+    geoip: true
+    geoip-code: IR
     ipcidr:
       - '0.0.0.0/8'
       - '10.0.0.0/8'
