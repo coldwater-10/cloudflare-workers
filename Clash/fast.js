@@ -472,11 +472,19 @@ rule-providers:
       https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml
     path: ./ruleset/AntiAd.yaml
     interval: 432000
+  MoreAd:
+    type: http
+    behavior: domain
+    url: https://howdy.id/download/rules/clash.txt
+    path: ./providers/rule-provider_clash.yaml
+    interval: 86400
+
 
 proxies:
 ${configList.map(cnf => "  - " + JSON.stringify(cnf)).join("\n")}
 
 proxy-groups:
+
   - name: 📶 انتخاب نوع اتصال
     type: select
     proxies:
@@ -484,54 +492,64 @@ proxy-groups:
       - دستی 🤏🏻
       - ⛔ قطع اینترنت
       - 🛡️ بدون فیلترشکن
+
   - name: دستی 🤏🏻
     type: select
     proxies:
 ${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
+
   - name: خودکار (بهترین پینگ) 🤖
     type: url-test
     url: http://clients3.google.com/generate_204
     interval: 300
     proxies:
 ${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
+
   - name: 🇮🇷 سایتای ایرانی
     type: select
     proxies:
       - 🛡️ بدون فیلترشکن
       - 🚫 اجازه ندادن
       - 📶 انتخاب نوع اتصال
+
   - name: 🆎 تبلیغات
     type: select
     proxies:
       - 🚫 اجازه ندادن
       - 🛡️ بدون فیلترشکن
       - 📶 انتخاب نوع اتصال
+
   - name: 🍃 تصفیه برنامه
     type: select
     proxies:
       - 🚫 اجازه ندادن
       - 🛡️ بدون فیلترشکن
       - 📶 انتخاب نوع اتصال
+
   - name: 🛑 رهگیری جهانی
     type: select
     proxies:
       - 🚫 اجازه ندادن
       - 🛡️ بدون فیلترشکن
       - 📶 انتخاب نوع اتصال
+
   - name: 🎮 استیم
     type: select
     proxies:
       - 🛡️ بدون فیلترشکن
       - 🚫 اجازه ندادن
       - 📶 انتخاب نوع اتصال
+
   - name: 🛡️ بدون فیلترشکن
     type: select
     proxies:
       - DIRECT
+
   - name: ⛔ قطع اینترنت
     type: select
     proxies:
       - REJECT
+
   - name: 🚫 اجازه ندادن
     type: select
     proxies:
@@ -547,6 +565,7 @@ rules:
   - RULE-SET,steam,🎮 استیم
   - RULE-SET,add,🆎 تبلیغات
   - RULE-SET,AntiAd,🆎 تبلیغات
+  - RULE-SET,MoreAd,🆎 تبلیغات
   - RULE-SET,Purification,🍃 تصفیه برنامه
   - RULE-SET,Global,🛑 رهگیری جهانی
   - IP-CIDR,23.109.87.42/32,🆎 تبلیغات,no-resolve
@@ -644,5 +663,5 @@ rules:
   - IP-CIDR,223.87.182.52/32,🍃 تصفیه برنامه,no-resolve
   - MATCH,📶 انتخاب نوع اتصال
 `
-   return yaml
+return yaml;
 }
