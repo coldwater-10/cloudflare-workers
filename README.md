@@ -13,11 +13,11 @@
 [با پروکسیای سریع](https://github.com/coldwater-10/cloudflare-workers/blob/main/Clash/fast.js)
 
 
-[با همه لینکای اشتراک پروکسی پلاس](https://github.com/coldwater-10/cloudflare-workers/blob/main/Clash/plus.js) (انواع مختلف نوع انتخاب پروکسی)
+[با همه لینکای اشتراک پروکسی - پلاس](https://github.com/coldwater-10/cloudflare-workers/blob/main/Clash/plus.js) (انواع مختلف نوع انتخاب پروکسی)
 
-[با همه لینکای اشتراک پروکسی لایت](https://github.com/coldwater-10/cloudflare-workers/blob/main/Clash/lite.js) (با کد کمتر اگه بالاییا روی گوشی درست سیو نشد)
+[با همه لینکای اشتراک پروکسی - لایت](https://github.com/coldwater-10/cloudflare-workers/blob/main/Clash/lite.js) (با کد کمتر اگه بالاییا روی گوشی درست سیو نشد)
 
-[با پروکسیای سریع آنتی](https://github.com/coldwater-10/cloudflare-workers/blob/main/Clash/fast.anty.js) (با استارتر خصوص ایرانسلیا - مخففی که باید بعد آدرس ورکر اضافه کنین: anty)
+[با پروکسیای سریع - آنتی](https://github.com/coldwater-10/cloudflare-workers/blob/main/Clash/fast.anty.js) (با استارتر خصوص ایرانسلیا - مخففی که باید بعد آدرس ورکر اضافه کنین: anty)
 
 
 ## انواع ورکر برای کلش متا:
@@ -30,9 +30,9 @@
 [با پروکسیای سریع](https://github.com/coldwater-10/cloudflare-workers/tree/main/Clash%20Meta/fast.js)
 
 
-[با همه لینکای اشتراک پروکسی پلاس](https://github.com/coldwater-10/cloudflare-workers/tree/main/Clash%20Meta/plus.js) (انواع مختلف نوع انتخاب پروکسی)
+[با همه لینکای اشتراک پروکسی - پلاس](https://github.com/coldwater-10/cloudflare-workers/tree/main/Clash%20Meta/plus.js) (انواع مختلف نوع انتخاب پروکسی)
 
-[با همه لینکای اشتراک پروکسی لایت](https://github.com/coldwater-10/cloudflare-workers/tree/main/Clash%20Meta/lite.js) (با کد کمتر اگه بالاییا روی گوشی درست سیو نشد)
+[با همه لینکای اشتراک پروکسی - لایت](https://github.com/coldwater-10/cloudflare-workers/tree/main/Clash%20Meta/lite.js) (با کد کمتر اگه بالاییا روی گوشی درست سیو نشد)
 
 
 ## انواع ورکر برای نکوباکس:
