@@ -511,6 +511,12 @@ rule-providers:
       https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml
     path: ./ruleset/AntiAd.yaml
     interval: 432000
+  MoreAd:
+    type: http
+    behavior: domain
+    url: https://howdy.id/download/rules/clash.txt
+    path: ./providers/rule-provider_clash.yaml
+    interval: 86400
 
 proxies:
 ${configList.map(cnf => "  - " + JSON.stringify(cnf)).join("\n")}
@@ -588,6 +594,7 @@ rules:
   - GEOSITE,category-ads-all,🆎 تبلیغات 
   - RULE-SET,add,🆎 تبلیغات
   - RULE-SET,AntiAd,🆎 تبلیغات
+  - RULE-SET,MoreAd,🆎 تبلیغات
   - RULE-SET,Purification,🍃 تصفیه برنامه
   - RULE-SET,Global,🛑 رهگیری جهانی
   - GEOSITE,win-spy,🛑 رهگیری جهانی
