@@ -547,6 +547,119 @@ ${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
     proxies:
       - REJECT
 
+rule-providers:
+  iran:
+    type: http
+    behavior: classical
+    url: >-
+      https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/clash_rules.yaml
+    path: ./ruleset/iran.yaml
+    interval: 432000
+  steam:
+    type: http
+    behavior: classical
+    url: >-
+      https://raw.githubusercontent.com/coldwater-10/clash_rules/main/steam.yaml
+    path: ./ruleset/steam.yaml
+    interval: 432000
+  add:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/coldwater-10/clash_rules/main/add.yaml
+    path: ./ruleset/add.yaml
+    interval: 432000
+  Purification:
+    type: http
+    behavior: classical
+    url: >-
+      https://raw.githubusercontent.com/coldwater-10/clash_rules/main/Purification%20app.yaml
+    path: ./ruleset/Purification.yaml
+    interval: 432000
+  Global:
+    type: http
+    behavior: classical
+    url: >-
+      https://raw.githubusercontent.com/coldwater-10/clash_rules/main/Global%20tracking.yaml
+    path: ./ruleset/Global.yaml
+    interval: 432000
+  AntiAd:
+    type: http
+    behavior: domain
+    url: >-
+      https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml
+    path: ./ruleset/AntiAd.yaml
+    interval: 432000
+  MoreAd:
+    type: http
+    behavior: domain
+    url: https://howdy.id/download/rules/clash.txt
+    path: ./providers/rule-provider_clash.yaml
+    interval: 86400
+
+proxies:
+${configList.map(cnf => "  - " + JSON.stringify(cnf)).join("\n")}
+
+proxy-groups:
+  - name: 📶 انتخاب نوع اتصال
+    type: select
+    proxies:
+      - خودکار (بهترین پینگ) 🤖
+      - دستی 🤏🏻
+      - ⛔ قطع اینترنت
+      - 🛡️ بدون فیلترشکن
+  - name: دستی 🤏🏻
+    type: select
+    proxies:
+${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
+  - name: خودکار (بهترین پینگ) 🤖
+    type: url-test
+    url: http://clients3.google.com/generate_204
+    interval: 300
+    proxies:
+${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
+  - name: 🇮🇷 سایتای ایرانی
+    type: select
+    proxies:
+      - 🛡️ بدون فیلترشکن
+      - 🚫 اجازه ندادن
+      - 📶 انتخاب نوع اتصال
+  - name: 🆎 تبلیغات
+    type: select
+    proxies:
+      - 🚫 اجازه ندادن
+      - 🛡️ بدون فیلترشکن
+      - 📶 انتخاب نوع اتصال
+  - name: 🍃 تصفیه برنامه
+    type: select
+    proxies:
+      - 🚫 اجازه ندادن
+      - 🛡️ بدون فیلترشکن
+      - 📶 انتخاب نوع اتصال
+  - name: 🛑 رهگیری جهانی
+    type: select
+    proxies:
+      - 🚫 اجازه ندادن
+      - 🛡️ بدون فیلترشکن
+      - 📶 انتخاب نوع اتصال
+  - name: 🎮 استیم
+    type: select
+    proxies:
+      - 🛡️ بدون فیلترشکن
+      - 🚫 اجازه ندادن
+      - 📶 انتخاب نوع اتصال
+  - name: 🛡️ بدون فیلترشکن
+    type: select
+    proxies:
+      - DIRECT
+  - name: ⛔ قطع اینترنت
+    type: select
+    proxies:
+      - REJECT
+  - name: 🚫 اجازه ندادن
+    type: select
+    proxies:
+      - REJECT
+
 rules:
   - DOMAIN-SUFFIX,ir,🇮🇷 سایتای ایرانی
   - GEOIP,IR,🇮🇷 سایتای ایرانی
@@ -559,6 +672,7 @@ rules:
   - GEOSITE,category-ads-all,🆎 تبلیغات 
   - RULE-SET,add,🆎 تبلیغات
   - RULE-SET,AntiAd,🆎 تبلیغات
+  - RULE-SET,MoreAd,🆎 تبلیغات
   - RULE-SET,Purification,🍃 تصفیه برنامه
   - RULE-SET,Global,🛑 رهگیری جهانی
   - GEOSITE,win-spy,🛑 رهگیری جهانی
@@ -657,5 +771,5 @@ rules:
   - IP-CIDR,223.87.182.52/32,🍃 تصفیه برنامه,no-resolve
   - MATCH,📶 انتخاب نوع اتصال
 `
-   return yaml
+return yaml;
 }
