@@ -444,8 +444,7 @@ rule-providers:
   iran:
     type: http
     behavior: classical
-    url: >-
-      https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/clash_rules.yaml
+    url: https://raw.githubusercontent.com/coldwater-10/clash_rules/main/iran.yaml
     path: ./ruleset/iran.yaml
     interval: 432000
   steam:
