@@ -265,7 +265,7 @@ profile:
   store-fake-ip: true
 dns:
   enable: true
-  ipv6: false
+  ipv6: true
   use-host: true
   enhanced-mode: fake-ip
   listen: 0.0.0.0:1053
@@ -278,8 +278,26 @@ dns:
     - tls://1.0.0.1:853
     - tls://1.1.1.1:853
     - tcp://1.1.1.1
-    - tcp://1.1.1.1#en0
+    - 'tcp://1.1.1.1#en0'
   fallback:
+    - https://dns.google/dns-query
+    - https://8.8.8.8/dns-query
+    - https://9.9.9.9/dns-query
+    - https://rubyfish.cn/dns-query
+    - https://doh.opendns.com/dns-query
+    - https://doh.dns.sb/dns-query
+    - https://doh.pub/dns-query
+    - https://dns.quad9.net/dns-query 
+    - https://dns.nextdns.io 
+    - https://doh.cleanbrowsing.org/doh/security-filter/
+    - https://dns.adguard.com/dns-query
+    - https://resolver2.dns.watch/dns-query 
+    - https://doh-de.blahdns.com/dns-query
+    - https://dns.surfshark.com/dns-query
+    - https://freedns.controld.com/p2
+    - https://dns.dnswarden.com/adblock
+    - https://adblock.doh.mullvad.net/dns-query
+    - https://basic.rethinkdns.com/dns-query
     - 8.8.8.8
     - 8.8.4.4
     - 4.2.2.4
@@ -293,13 +311,6 @@ dns:
     - 114.114.114.114
     - 87.118.100.175:110
     - '8.8.8.8#en0'
-    - https://dns.google/dns-query
-    - https://8.8.8.8/dns-query
-    - https://9.9.9.9/dns-query
-    - https://rubyfish.cn/dns-query
-    - https://doh.opendns.com/dns-query
-    - https://doh.dns.sb/dns-query
-    - https://doh.pub/dns-query
     - dhcp://en0
     - 'tcp://8.8.8.8#en0'
     - 'tls://8.8.8.8#en0'
