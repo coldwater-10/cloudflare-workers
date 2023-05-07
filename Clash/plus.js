@@ -486,6 +486,12 @@ rule-providers:
       https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml
     path: ./ruleset/AntiAd.yaml
     interval: 432000
+  MoreAd:
+    type: http
+    behavior: domain
+    url: https://howdy.id/download/rules/clash.txt
+    path: ./providers/rule-provider_clash.yaml
+    interval: 86400
 
 
 proxies:
@@ -498,9 +504,6 @@ proxy-groups:
     proxies:
       - خودکار (بهترین پینگ) 🤖
       - دستی 🤏🏻
-      - بازگشتی ➡️
-      - تعادل بار (هش ثابت) ♻️
-      - تعادل بار (زمان بندی) ⏳
       - ⛔ قطع اینترنت
       - 🛡️ بدون فیلترشکن
 
@@ -513,30 +516,6 @@ ${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
     type: url-test
     url: http://clients3.google.com/generate_204
     interval: 300
-    proxies:
-${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
-
-  - name: بازگشتی ➡️
-    type: fallback
-    url: http://clients3.google.com/generate_204
-    interval: 300
-    proxies:
-${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
-
-  - name: تعادل بار (هش ثابت) ♻️
-    type: load-balance
-    strategy: consistent-hashing
-    url: http://clients3.google.com/generate_204
-    interval: 300
-    proxies:
-${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
-
-  - name: تعادل بار (زمان بندی) ⏳
-    type: load-balance
-    strategy: round-robin
-    url: http://clients3.google.com/generate_204
-    interval: 300
-    tolerance: 100
     proxies:
 ${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
 
@@ -600,6 +579,7 @@ rules:
   - RULE-SET,steam,🎮 استیم
   - RULE-SET,add,🆎 تبلیغات
   - RULE-SET,AntiAd,🆎 تبلیغات
+  - RULE-SET,MoreAd,🆎 تبلیغات
   - RULE-SET,Purification,🍃 تصفیه برنامه
   - RULE-SET,Global,🛑 رهگیری جهانی
   - IP-CIDR,23.109.87.42/32,🆎 تبلیغات,no-resolve
@@ -697,5 +677,6 @@ rules:
   - IP-CIDR,223.87.182.52/32,🍃 تصفیه برنامه,no-resolve
   - MATCH,📶 انتخاب نوع اتصال
 `
-   return yaml
+return yaml;
 }
+
