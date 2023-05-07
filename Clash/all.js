@@ -443,7 +443,6 @@ dns:
   #auto-redir: true # or false
   #auto-route: true 
   #auto-detect-interface: true
-
 rule-providers:
   iran:
     type: http
@@ -486,11 +485,14 @@ rule-providers:
       https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml
     path: ./ruleset/AntiAd.yaml
     interval: 432000
-
-
+  MoreAd:
+    type: http
+    behavior: domain
+    url: https://howdy.id/download/rules/clash.txt
+    path: ./providers/rule-provider_clash.yaml
+    interval: 86400
 proxies:
 ${configList.map(cnf => "  - " + JSON.stringify(cnf)).join("\n")}
-
 proxy-groups:
   - name: 📶 انتخاب نوع اتصال
     type: select
@@ -551,7 +553,6 @@ ${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
     type: select
     proxies:
       - REJECT
-
 rules:
   - DOMAIN-SUFFIX,ir,🇮🇷 سایتای ایرانی
   - GEOIP,IR,🇮🇷 سایتای ایرانی
@@ -562,6 +563,7 @@ rules:
   - RULE-SET,steam,🎮 استیم
   - RULE-SET,add,🆎 تبلیغات
   - RULE-SET,AntiAd,🆎 تبلیغات
+  - RULE-SET,MoreAd,🆎 تبلیغات
   - RULE-SET,Purification,🍃 تصفیه برنامه
   - RULE-SET,Global,🛑 رهگیری جهانی
   - IP-CIDR,23.109.87.42/32,🆎 تبلیغات,no-resolve
@@ -659,5 +661,5 @@ rules:
   - IP-CIDR,223.87.182.52/32,🍃 تصفیه برنامه,no-resolve
   - MATCH,📶 انتخاب نوع اتصال
 `
-   return yaml
+return yaml;
 }
