@@ -34,6 +34,7 @@
 
 [با همه لینکای اشتراک پروکسی - لایت](https://github.com/coldwater-10/cloudflare-workers/tree/main/Clash%20Meta/lite.js) (با کد کمتر اگه بالاییا روی گوشی درست سیو نشد)
 
+[با پروکسیای سریع - آنتی](https://github.com/coldwater-10/cloudflare-workers/blob/main/Clash%20Meta/fast.anty.js) (با استارتر مخصوص ایرانسلیا - مخففی که باید بعد آدرس ورکر اضافه کنین: anty)
 
 ## انواع ورکر برای نکوباکس:
 [با پروکسیای فرینود](https://github.com/coldwater-10/cloudflare-workers/tree/main/Nekobox/freenode.js)
