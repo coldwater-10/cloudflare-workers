@@ -17,7 +17,7 @@
 
 [با همه لینکای اشتراک پروکسی لایت](https://github.com/coldwater-10/cloudflare-workers/blob/main/Clash/lite.js) (با کد کمتر اگه بالاییا روی گوشی درست سیو نشد)
 
-[با پروکسیای سریع آنتی](https://github.com/coldwater-10/cloudflare-workers/blob/main/Clash/fast.anty.js) (با استارتر خصوص ایرانسلیا مخففی که باید بعد ادرس ورکر اضافه کنین anty)
+[با پروکسیای سریع آنتی](https://github.com/coldwater-10/cloudflare-workers/blob/main/Clash/fast.anty.js) (با استارتر خصوص ایرانسلیا - مخففی که باید بعد آدرس ورکر اضافه کنین: anty)
 
 
 ## انواع ورکر برای کلش متا:
