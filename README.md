@@ -17,6 +17,8 @@
 
 [با همه لینکای اشتراک پروکسی لایت](https://github.com/coldwater-10/cloudflare-workers/blob/main/Clash/lite.js) (با کد کمتر اگه بالاییا روی گوشی درست سیو نشد)
 
+[با پروکسیای سریع آنتی](https://github.com/coldwater-10/cloudflare-workers/blob/main/Clash/fast.anty.js) (با مخفف مخصوص و استارتر برای ایرانسلیا)
+
 
 ## انواع ورکر برای کلش متا:
 [با پروکسیای فرینود](https://github.com/coldwater-10/cloudflare-workers/tree/main/Clash%20Meta/freenode.js)
