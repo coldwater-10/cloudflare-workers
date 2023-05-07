@@ -443,6 +443,7 @@ dns:
   #auto-redir: true # or false
   #auto-route: true 
   #auto-detect-interface: true
+
 rule-providers:
   iran:
     type: http
@@ -491,9 +492,13 @@ rule-providers:
     url: https://howdy.id/download/rules/clash.txt
     path: ./providers/rule-provider_clash.yaml
     interval: 86400
+
+
 proxies:
 ${configList.map(cnf => "  - " + JSON.stringify(cnf)).join("\n")}
+
 proxy-groups:
+
   - name: 📶 انتخاب نوع اتصال
     type: select
     proxies:
@@ -501,58 +506,69 @@ proxy-groups:
       - دستی 🤏🏻
       - ⛔ قطع اینترنت
       - 🛡️ بدون فیلترشکن
+
   - name: دستی 🤏🏻
     type: select
     proxies:
 ${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
+
   - name: خودکار (بهترین پینگ) 🤖
     type: url-test
     url: http://clients3.google.com/generate_204
     interval: 300
     proxies:
 ${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
+
   - name: 🇮🇷 سایتای ایرانی
     type: select
     proxies:
       - 🛡️ بدون فیلترشکن
       - 🚫 اجازه ندادن
       - 📶 انتخاب نوع اتصال
+
   - name: 🆎 تبلیغات
     type: select
     proxies:
       - 🚫 اجازه ندادن
       - 🛡️ بدون فیلترشکن
       - 📶 انتخاب نوع اتصال
+
   - name: 🍃 تصفیه برنامه
     type: select
     proxies:
       - 🚫 اجازه ندادن
       - 🛡️ بدون فیلترشکن
       - 📶 انتخاب نوع اتصال
+
   - name: 🛑 رهگیری جهانی
     type: select
     proxies:
       - 🚫 اجازه ندادن
       - 🛡️ بدون فیلترشکن
       - 📶 انتخاب نوع اتصال
+
   - name: 🎮 استیم
     type: select
     proxies:
       - 🛡️ بدون فیلترشکن
       - 🚫 اجازه ندادن
       - 📶 انتخاب نوع اتصال
+
   - name: 🛡️ بدون فیلترشکن
     type: select
     proxies:
       - DIRECT
+
   - name: ⛔ قطع اینترنت
     type: select
     proxies:
       - REJECT
+
   - name: 🚫 اجازه ندادن
     type: select
     proxies:
       - REJECT
+
 rules:
   - DOMAIN-SUFFIX,ir,🇮🇷 سایتای ایرانی
   - GEOIP,IR,🇮🇷 سایتای ایرانی
@@ -663,3 +679,4 @@ rules:
 `
 return yaml;
 }
+
