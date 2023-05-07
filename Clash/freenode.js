@@ -284,7 +284,7 @@ dns:
   ipv6: true
   use-host: true
   enhanced-mode: fake-ip
-  listen: 0.0.0.0:1053
+  listen: 0.0.0.0:7874
   nameserver:
     - 'https://1.1.1.1/dns-query#en0'
     - https://cloudflare-dns.com/dns-query
