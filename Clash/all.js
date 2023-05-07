@@ -268,7 +268,7 @@ dns:
   ipv6: true
   use-host: true
   enhanced-mode: fake-ip
-  listen: 0.0.0.0:1053
+  listen: 0.0.0.0:7874
   nameserver:
     - 'https://1.1.1.1/dns-query#en0'
     - https://cloudflare-dns.com/dns-query
@@ -318,7 +318,8 @@ dns:
     - tls://dns.rubyfish.cn:853
     - tls://dot.pub:853
   fallback-filter:
-    geoip: false
+    geoip: true
+    geoip-code: IR
     ipcidr:
       - '0.0.0.0/8'
       - '10.0.0.0/8'
