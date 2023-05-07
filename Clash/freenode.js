@@ -460,7 +460,7 @@ dns:
   #auto-route: true 
   #auto-detect-interface: true
 
-rule-providers:
+
 rule-providers:
   iran:
     type: http
