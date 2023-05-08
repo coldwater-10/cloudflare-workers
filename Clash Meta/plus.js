@@ -506,13 +506,15 @@ rule-providers:
 
 proxies:
 ${configList.map(cnf => "  - " + JSON.stringify(cnf)).join("\n")}
-
 proxy-groups:
   - name: 📶 انتخاب نوع اتصال
     type: select
     proxies:
       - خودکار (بهترین پینگ) 🤖
       - دستی 🤏🏻
+      - بازگشتی ➡️
+      - تعادل بار (هش ثابت) ♻️
+      - تعادل بار (زمان بندی) ⏳
       - ⛔ قطع اینترنت
       - 🛡️ بدون فیلترشکن
   - name: دستی 🤏🏻
@@ -523,6 +525,27 @@ ${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
     type: url-test
     url: http://clients3.google.com/generate_204
     interval: 300
+    proxies:
+${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
+  - name: بازگشتی ➡️
+    type: fallback
+    url: http://clients3.google.com/generate_204
+    interval: 300
+    proxies:
+${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
+  - name: تعادل بار (هش ثابت) ♻️
+    type: load-balance
+    strategy: consistent-hashing
+    url: http://clients3.google.com/generate_204
+    interval: 300
+    proxies:
+${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
+  - name: تعادل بار (زمان بندی) ⏳
+    type: load-balance
+    strategy: round-robin
+    url: http://clients3.google.com/generate_204
+    interval: 300
+    tolerance: 100
     proxies:
 ${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
   - name: 🇮🇷 سایتای ایرانی
