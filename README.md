@@ -115,6 +115,7 @@
 ### تبدیل فرمت همه آیپی های [لیستم](https://raw.githubusercontent.com/coldwater-10/clash_rules/main/List%20of%20clean%20IPs.txt) برای [اسکنر مرتضی](https://github.com/MortezaBashsiz/CFScanner)
  [نمونه خروجی](https://list-ipv4-for-wincfscaner.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare-workers/tree/main/Other/list-ipv4-for-winCFScaner.js)
 تعداد آیپی و دامین های لیستم برای هر مخفف
+
  [نمونه خروجی](https://counter.vpnclashfa.workers.dev)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare-workers/blob/main/Other/IP.Counter.JS)
 
 ###  تبدیل فرمت [لیست](https://raw.githubusercontent.com/vfarid/cf-clean-ips/main/list.json) جمع آوری کننده آیپی وحید برای [اسکنر مرتضی](https://github.com/MortezaBashsiz/CFScanner/releases/tag/v1.2.8515.31784)
