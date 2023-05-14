@@ -109,14 +109,16 @@
 
 # بقیه ورکرا:
 
-### تبدیل فرمت [لیست](https://github.com/vfarid/cf-clean-ips) جمع آوری کننده آیپی وحید برای ورکرای کانفیگ
- [نمونه خروجی](https://cf-clean-ips.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare-workers/tree/main/Other/cf-clean-ips.js)
-
 ### تبدیل فرمت همه آیپی های [لیستم](https://raw.githubusercontent.com/coldwater-10/clash_rules/main/List%20of%20clean%20IPs.txt) برای [اسکنر مرتضی](https://github.com/MortezaBashsiz/CFScanner)
  [نمونه خروجی](https://list-ipv4-for-wincfscaner.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare-workers/tree/main/Other/list-ipv4-for-winCFScaner.js)
 
 #### تعداد آیپی و دامین های لیستم برای هر مخفف
  [نمونه خروجی](https://counter.vpnclashfa.workers.dev)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare-workers/blob/main/Other/IP.Counter.JS)
+
+
+### تبدیل فرمت [لیست](https://github.com/vfarid/cf-clean-ips) جمع آوری کننده آیپی وحید برای ورکرای کانفیگ
+ [نمونه خروجی](https://cf-clean-ips.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare-workers/tree/main/Other/cf-clean-ips.js)
+
 
 ###  تبدیل فرمت [لیست](https://raw.githubusercontent.com/vfarid/cf-clean-ips/main/list.json) جمع آوری کننده آیپی وحید برای [اسکنر مرتضی](https://github.com/MortezaBashsiz/CFScanner/releases/tag/v1.2.8515.31784)
  [نمونه خروجی](https://vahid-iplist-for-morteza-scanner.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://raw.githubusercontent.com/coldwater-10/cloudflare-workers/main/Other/Vahid's%20IP%20list%20for%20Morteza%20scanner.js)
@@ -144,6 +146,11 @@
 
 ©️ اطلاعاتش رو از گیتهاب [hossein mohseni](https://github.com/hossein-mohseni/CF-Web) میگیره
 
+
+### لیست doh (dns over https) های عمومی
+  [نمونه خروجی همشون](https://doh-list.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare-workers/blob/main/Other/doh-list.js)
+
+©️ اطلاعاتش رو از گیتهاب [curl]([https://github.com/hossein-mohseni/CF-Web](https://github.com/curl/curl/wiki/DNS-over-HTTPS)) میگیره
 
 
 <div style="display: flex; justify-content: space-between; align-items: center; width: 300px;">
