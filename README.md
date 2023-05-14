@@ -150,7 +150,7 @@
 ### لیست doh (dns over https) های عمومی
   [نمونه خروجی همشون](https://doh-list.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare-workers/blob/main/Other/doh-list.js)
 
-©️ اطلاعاتش رو از گیتهاب [curl]([https://github.com/hossein-mohseni/CF-Web](https://github.com/curl/curl/wiki/DNS-over-HTTPS) میگیره
+©️ اطلاعاتش رو از گیتهاب [curl](https://github.com/curl/curl/wiki/DNS-over-HTTPS) میگیره
 
 
 <div style="display: flex; justify-content: space-between; align-items: center; width: 300px;">
