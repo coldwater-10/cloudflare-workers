@@ -123,6 +123,11 @@
 ###  تبدیل فرمت [لیست](https://raw.githubusercontent.com/vfarid/cf-clean-ips/main/list.json) جمع آوری کننده آیپی وحید برای [اسکنر مرتضی](https://github.com/MortezaBashsiz/CFScanner/releases/tag/v1.2.8515.31784)
  [نمونه خروجی](https://vahid-iplist-for-morteza-scanner.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://raw.githubusercontent.com/coldwater-10/cloudflare-workers/main/Other/Vahid's%20IP%20list%20for%20Morteza%20scanner.js)
 
+
+#### لیست آیپی های جدید وحید که هنوز به لیست من اضافه  نشده
+ [نمونه خروجی](https://new-test-ip-list.clashfa.workers.dev)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare-workers/blob/main/Other/Vahid's-new-IPs.js)
+
+
 ### لیست دامین سایتای پشت کلودفلر
  [نمونه خروجی همشون](https://domain-all-sites-behind-cf.vpnclashfa.workers.dev/)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare-workers/tree/main/Other/domain-all-sites-behind-cf.js)
 
