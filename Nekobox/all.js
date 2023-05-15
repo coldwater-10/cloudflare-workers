@@ -46,6 +46,7 @@ const cnfLinks = [
   "https://raw.githubusercontent.com/hossein-mohseni/Free-V2ray-Config/main/All_Configs_Sub.txt",
   "https://raw.githubusercontent.com/AlienVPN402/AlienVPN402-subscribe-servers/main/index.html",
   "https://tunnel.nbproject.wiki/7tNk9VH7uGdMVjs3qp8/f8a44475-fe9e-4087-bcb5-d640886365aa/all.txt",
+  "https://wfi.sahnama.com/nCRTlqXjXo20Pgr0R/61280f80-cd25-4c7b-8e5a-b1560617047a/all.txt",
   "https://sahnama.com/s9No4vnWft1Q/df68f678-62c3-4799-91a8-4d301e8cf565/all.txt",
   "https://cu.wfitech.net/1mkViriOFligbGewTkMrOQE/030ae75a-1a4a-45cc-88f1-f1b7d9fe15f3/all.txt",
   "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list_raw.txt",
