@@ -351,6 +351,18 @@ rule-providers:
       https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml
     path: ./ruleset/AntiAd.yaml
     interval: 432000
+  MoreAd:
+    type: http
+    behavior: domain
+    url: https://howdy.id/download/rules/clash.txt
+    path: ./providers/rule-provider_clash.yaml
+    interval: 86400
+  bootmortis:
+    type: http
+    behavior: domain
+    url: "https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/clash_rules.yaml"
+    path: ./ruleset/iran.yaml
+    interval: 432000
 
 
 proxies:
@@ -418,20 +430,18 @@ ${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
       - REJECT
 
 rules:
-  - DOMAIN-SUFFIX,ir,🇮🇷 سایتای ایرانی
   - GEOIP,IR,🇮🇷 سایتای ایرانی
   - GEOSITE,category-ir,🇮🇷 سایتای ایرانی
-  - RULE-SET,iran,🇮🇷 سایتای ایرانی
-  - DOMAIN-KEYWORD,freeserver.top,🇮🇷 سایتای ایرانی
-  - DOMAIN-KEYWORD,sermovie.xyz,🇮🇷 سایتای ایرانی
-  - DOMAIN-KEYWORD,mobo-dl-filter-nakon.xyz,🇮🇷 سایتای ایرانی
+  - RULE-SET,Purification,🍃 تصفیه برنامه
+  - RULE-SET,Global,🛑 رهگیری جهانی
+  - GEOSITE,win-spy,🛑 رهگیری جهانی
   - RULE-SET,steam,🎮 استیم
   - GEOSITE,category-ads-all,🆎 تبلیغات 
   - RULE-SET,add,🆎 تبلیغات
   - RULE-SET,AntiAd,🆎 تبلیغات
-  - RULE-SET,Purification,🍃 تصفیه برنامه
-  - RULE-SET,Global,🛑 رهگیری جهانی
-  - GEOSITE,win-spy,🛑 رهگیری جهانی
+  - RULE-SET,MoreAd,🆎 تبلیغات
+  - RULE-SET,iran,🇮🇷 سایتای ایرانی
+  - RULE-SET,bootmortis,🇮🇷 سایتای ایرانی
   - MATCH,📶 انتخاب نوع اتصال
 `
    return yaml
