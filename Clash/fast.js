@@ -477,6 +477,12 @@ rule-providers:
     url: https://howdy.id/download/rules/clash.txt
     path: ./providers/rule-provider_clash.yaml
     interval: 86400
+  bootmortis:
+    type: http
+    behavior: domain
+    url: "https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/clash_rules.yaml"
+    path: ./ruleset/iran.yaml
+    interval: 432000
 
 
 proxies:
@@ -555,18 +561,15 @@ ${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
       - REJECT
 
 rules:
-  - DOMAIN-SUFFIX,ir,🇮🇷 سایتای ایرانی
   - GEOIP,IR,🇮🇷 سایتای ایرانی
-  - RULE-SET,iran,🇮🇷 سایتای ایرانی
-  - DOMAIN-KEYWORD,freeserver.top,🇮🇷 سایتای ایرانی
-  - DOMAIN-KEYWORD,sermovie.xyz,🇮🇷 سایتای ایرانی
-  - DOMAIN-KEYWORD,mobo-dl-filter-nakon.xyz,🇮🇷 سایتای ایرانی
   - RULE-SET,steam,🎮 استیم
+  - RULE-SET,Purification,🍃 تصفیه برنامه
+  - RULE-SET,Global,🛑 رهگیری جهانی
   - RULE-SET,add,🆎 تبلیغات
   - RULE-SET,AntiAd,🆎 تبلیغات
   - RULE-SET,MoreAd,🆎 تبلیغات
-  - RULE-SET,Purification,🍃 تصفیه برنامه
-  - RULE-SET,Global,🛑 رهگیری جهانی
+  - RULE-SET,iran,🇮🇷 سایتای ایرانی
+  - RULE-SET,bootmortis,🇮🇷 سایتای ایرانی
   - IP-CIDR,23.109.87.42/32,🆎 تبلیغات,no-resolve
   - IP-CIDR,23.109.87.101/32,🆎 تبلیغات,no-resolve
   - IP-CIDR,35.232.188.118/32,🆎 تبلیغات,no-resolve
