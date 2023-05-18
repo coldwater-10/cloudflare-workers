@@ -45,6 +45,7 @@ const cnfLinks = [
   "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.txt",
   "https://raw.githubusercontent.com/hossein-mohseni/Free-V2ray-Config/main/All_Configs_Sub.txt",
   "https://raw.githubusercontent.com/AlienVPN402/AlienVPN402-subscribe-servers/main/index.html",
+  "https://alienvpn402.github.io/AlienVPN402-subscribe-servers/",
   "https://tunnel.nbproject.wiki/7tNk9VH7uGdMVjs3qp8/f8a44475-fe9e-4087-bcb5-d640886365aa/all.txt",
   "https://wfi.sahnama.com/nCRTlqXjXo20Pgr0R/61280f80-cd25-4c7b-8e5a-b1560617047a/all.txt",
   "https://sahnama.com/s9No4vnWft1Q/df68f678-62c3-4799-91a8-4d301e8cf565/all.txt",
@@ -54,13 +55,14 @@ const cnfLinks = [
   "https://raw.githubusercontent.com/IranianCypherpunks/sub/main/config",
   "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list_raw.txt",
   "https://raw.githubusercontent.com/LonUp/NodeList/main/V2RAY/Latest.txt",
+  "https://raw.githubusercontent.com/RescueNet/TelegramFreeServer/main/Raw/All_Sub",
   "https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all"
 ]
 const cleanIPLink = "https://raw.githubusercontent.com/coldwater-10/clash_rules/main/List%20of%20clean%20IPs.txt"
 const operatorList = ["AST", "HWB", "IRC", "MBT", "MCI", "MKB", "PRS", "RTL", "SHT", "ZTL", "PIS", "DAT", "SAB", "ASR", "FAN", "ZTL", "SFR", "DID", "LAY", "MAH", "TAK", "PET", "AND", "RES", "AFR", "ARA", "SAM", "APT", "ALL", "PLUS", "TEST", "ENG", "FA", "IPV6", "IRCF", "ANTY"]
 const addressList = ["discord.com", "cloudflare.com", "nginx.com", "cdnjs.com", "vimeo.com", "networksolutions.com"]
 const fpList = ["chrome", "chrome", "chrome", "firefox", "safari", "edge", "ios", "android", "360", "qq", "random", "random"]
-const alpnList = ["http/1.1", "h2,http/1.1", "h2,http/1.1"]
+const alpnList = ["http/1.1", "h2,http/1.1", "h2,http/1.1", "h2,http/1.1"]
 var cleanIPs = []
 
 export default {
@@ -271,16 +273,51 @@ dns:
   default-nameserver: 
     - '127.0.0.1'
     - '1.1.1.1'
+    - '8.8.8.8'
+    - '1.0.0.1'
   enhanced-mode: fake-ip
   use-hosts: true
   nameserver:
+    - "https://xtom-osa-1.edge.nextdns.io/dns-query"
+    - "https://xtom-osa-1.edge.nextdns.io/"
+    - "https://170.176.145.150/"
+    - "https://Doh1.B-Cdn.net/dns-query"
+    - "https://dns.aa.net.uk/dns-query"
+    - "https://dns.controld.com/"
+    - "https://dns.gi.co.id/dns-query"
+    - "https://dns.melalandia.tk/dns-query"
+    - "https://dns.quad9.net/dns-query"
+    - "https://ipv4-zepto-mci-1.edge.nextdns.io/"
+    - "https://ipv4-zepto-mci-1.edge.nextdns.io/dns-query"
+    - "https://jp-kix2.doh.sb/"
+    - "https://nsc.torgues.net/"
+    - "https://nsc.torgues.net/dns-query"
+    - "https://res-acst3.absolight.net/"
+    - "https://xmission-slc-1.edge.nextdns.io/dns-query"
+    - "https://zepto-sto-1.edge.nextdns.io"
+    - "https://zepto-sto-1.edge.nextdns.io/"
+    - "https://cloudflare-dns.com/dns-query"
+    - "https://dns.google/dns-query"
+    - "https://dns.quad9.net/dns-query"
     - '127.0.0.1'
     - '1.1.1.1'
+
   fallback:
     - "https://1.1.1.1/dns-query"
     - "https://8.8.8.8/dns-query"
     - "https://9.9.9.9/dns-query"
     - "https://rubyfish.cn/dns-query"
+    - "https://dns.nextdns.io"
+    - "https://doh.cleanbrowsing.org/doh/security-filter/"
+    - "https://dns.adguard.com/dns-query"
+    - "https://resolver2.dns.watch/dns-query"
+    - "https://doh-de.blahdns.com/dns-query"
+    - "https://dns.surfshark.com/dns-query"
+    - "https://doh.opendns.com/dns-query"
+    - "https://freedns.controld.com/p2"
+    - "https://dns.dnswarden.com/adblock"
+    - "https://adblock.doh.mullvad.net/dns-query"
+    - "https://basic.rethinkdns.com/dns-query"
   fallback-filter:
     geoip: false
     ipcidr:
@@ -351,18 +388,29 @@ rule-providers:
     url: "https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/clash_rules.yaml"
     path: ./ruleset/iran.yaml
     interval: 432000
+  blocked:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/coldwater-10/clash_rules/main/blocked-sites.yml"
+    path: ./ruleset/blocked.yaml
+    interval: 432000
 
 proxies:
 ${configList.map(cnf => "  - " + JSON.stringify(cnf)).join("\n")}
 
 proxy-groups:
-  - name: 📶 انتخاب نوع اتصال
+  - name: 🔀 نوع انتخاب پروکسی
     type: select
     proxies:
       - خودکار (بهترین پینگ) 🤖
       - دستی 🤏🏻
       - ⛔ قطع اینترنت
       - 🛡️ بدون فیلترشکن
+  - name: 📶 انتخاب نوع اتصال
+    type: select
+    proxies:
+      - 🔐 فقط سایتای فیلتر شده
+      - 🌐 همه سایتا
   - name: دستی 🤏🏻
     type: select
     proxies:
@@ -378,31 +426,31 @@ ${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
     proxies:
       - 🛡️ بدون فیلترشکن
       - 🚫 اجازه ندادن
-      - 📶 انتخاب نوع اتصال
+      - 🔀 نوع انتخاب پروکسی
   - name: 🆎 تبلیغات
     type: select
     proxies:
       - 🚫 اجازه ندادن
       - 🛡️ بدون فیلترشکن
-      - 📶 انتخاب نوع اتصال
+      - 🔀 نوع انتخاب پروکسی
   - name: 🍃 تصفیه برنامه
     type: select
     proxies:
       - 🚫 اجازه ندادن
       - 🛡️ بدون فیلترشکن
-      - 📶 انتخاب نوع اتصال
+      - 🔀 نوع انتخاب پروکسی
   - name: 🛑 رهگیری جهانی
     type: select
     proxies:
       - 🚫 اجازه ندادن
       - 🛡️ بدون فیلترشکن
-      - 📶 انتخاب نوع اتصال
+      - 🔀 نوع انتخاب پروکسی
   - name: 🎮 استیم
     type: select
     proxies:
       - 🛡️ بدون فیلترشکن
       - 🚫 اجازه ندادن
-      - 📶 انتخاب نوع اتصال
+      - 🔀 نوع انتخاب پروکسی
   - name: 🛡️ بدون فیلترشکن
     type: select
     proxies:
@@ -415,8 +463,17 @@ ${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
     type: select
     proxies:
       - REJECT
+  - name: 🔐 فقط سایتای فیلتر شده
+    type: select
+    proxies:
+      - DIRECT
+  - name: 🌐 همه سایتا
+    type: select
+    proxies:
+      - 🔀 نوع انتخاب پروکسی
 
 rules:
+  - RULE-SET,blocked,🔀 نوع انتخاب پروکسی
   - GEOIP,IR,🇮🇷 سایتای ایرانی
   - RULE-SET,steam,🎮 استیم
   - RULE-SET,Purification,🍃 تصفیه برنامه
@@ -426,6 +483,7 @@ rules:
   - RULE-SET,MoreAd,🆎 تبلیغات
   - RULE-SET,iran,🇮🇷 سایتای ایرانی
   - RULE-SET,bootmortis,🇮🇷 سایتای ایرانی
+  - MATCH,📶 انتخاب نوع اتصال
 `
    return yaml
 }
