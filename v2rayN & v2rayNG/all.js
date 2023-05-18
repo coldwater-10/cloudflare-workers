@@ -45,6 +45,7 @@ const cnfLinks = [
   "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.txt",
   "https://raw.githubusercontent.com/hossein-mohseni/Free-V2ray-Config/main/All_Configs_Sub.txt",
   "https://raw.githubusercontent.com/AlienVPN402/AlienVPN402-subscribe-servers/main/index.html",
+  "https://alienvpn402.github.io/AlienVPN402-subscribe-servers/",
   "https://tunnel.nbproject.wiki/7tNk9VH7uGdMVjs3qp8/f8a44475-fe9e-4087-bcb5-d640886365aa/all.txt",
   "https://wfi.sahnama.com/nCRTlqXjXo20Pgr0R/61280f80-cd25-4c7b-8e5a-b1560617047a/all.txt",
   "https://sahnama.com/s9No4vnWft1Q/df68f678-62c3-4799-91a8-4d301e8cf565/all.txt",
@@ -54,13 +55,14 @@ const cnfLinks = [
   "https://raw.githubusercontent.com/IranianCypherpunks/sub/main/config",
   "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list_raw.txt",
   "https://raw.githubusercontent.com/LonUp/NodeList/main/V2RAY/Latest.txt",
+  "https://raw.githubusercontent.com/RescueNet/TelegramFreeServer/main/Raw/All_Sub",
   "https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all"
 ]
 const cleanIPLink = "https://raw.githubusercontent.com/coldwater-10/clash_rules/main/List%20of%20clean%20IPs.txt"
 const operatorList = ["AST", "HWB", "IRC", "MBT", "MCI", "MKB", "PRS", "RTL", "SHT", "ZTL", "PIS", "DAT", "SAB", "ASR", "FAN", "ZTL", "SFR", "DID", "LAY", "MAH", "TAK", "PET", "AND", "RES", "AFR", "ARA", "SAM", "APT", "ALL", "PLUS", "TEST", "ENG", "FA", "IPV6", "IRCF", "ANTY"]
 const addressList = ["discord.com", "cloudflare.com", "nginx.com", "cdnjs.com", "vimeo.com", "networksolutions.com"]
 const fpList = ["chrome", "chrome", "chrome", "firefox", "safari", "edge", "ios", "android", "360", "qq", "random", "random"]
-const alpnList = ["http/1.1", "h2,http/1.1", "h2,http/1.1"]
+const alpnList = ["http/1.1", "h2,http/1.1", "h2,http/1.1", "h2,http/1.1"]
 var cleanIPs = []
 
 export default {
