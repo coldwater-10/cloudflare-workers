@@ -40,7 +40,7 @@ const cleanIPLink = "https://raw.githubusercontent.com/coldwater-10/clash_rules/
 const operatorList = ["AST", "HWB", "IRC", "MBT", "MCI", "MKB", "PRS", "RTL", "SHT", "ZTL", "PIS", "DAT", "SAB", "ASR", "FAN", "ZTL", "SFR", "DID", "LAY", "MAH", "TAK", "PET", "AND", "RES", "AFR", "ARA", "SAM", "APT", "ALL", "PLUS", "TEST", "ENG", "FA", "IPV6", "IRCF", "ANTY"]
 const addressList = ["discord.com", "cloudflare.com", "nginx.com", "cdnjs.com", "vimeo.com", "networksolutions.com"]
 const fpList = ["chrome", "chrome", "chrome", "firefox", "safari", "edge", "ios", "android", "360", "qq", "random", "random"]
-const alpnList = ["http/1.1", "h2,http/1.1", "h2,http/1.1"]
+const alpnList = ["http/1.1", "h2,http/1.1", "h2,http/1.1", "h2,http/1.1"]
 var cleanIPs = []
 
 export default {
@@ -256,6 +256,24 @@ dns:
   enhanced-mode: fake-ip
   listen: 0.0.0.0:7874
   nameserver:
+    - https://xtom-osa-1.edge.nextdns.io/dns-query
+    - https://xtom-osa-1.edge.nextdns.io/
+    - https://170.176.145.150/
+    - https://Doh1.B-Cdn.net/dns-query
+    - https://dns.aa.net.uk/dns-query
+    - https://dns.controld.com/
+    - https://dns.gi.co.id/dns-query
+    - https://dns.melalandia.tk/dns-query
+    - https://dns.quad9.net/dns-query
+    - https://ipv4-zepto-mci-1.edge.nextdns.io/
+    - https://ipv4-zepto-mci-1.edge.nextdns.io/dns-query
+    - https://jp-kix2.doh.sb/
+    - https://nsc.torgues.net/
+    - https://nsc.torgues.net/dns-query
+    - https://res-acst3.absolight.net/
+    - https://xmission-slc-1.edge.nextdns.io/dns-query
+    - https://zepto-sto-1.edge.nextdns.io
+    - https://zepto-sto-1.edge.nextdns.io/
     - 'https://1.1.1.1/dns-query#en0'
     - https://cloudflare-dns.com/dns-query
     - https://1.1.1.1/dns-query
@@ -483,6 +501,12 @@ rule-providers:
     url: "https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/clash_rules.yaml"
     path: ./ruleset/iran.yaml
     interval: 432000
+  blocked:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/coldwater-10/clash_rules/main/blocked-sites.yml"
+    path: ./ruleset/blocked.yaml
+    interval: 432000
 
 
 proxies:
@@ -490,13 +514,19 @@ ${configList.map(cnf => "  - " + JSON.stringify(cnf)).join("\n")}
 
 proxy-groups:
 
-  - name: 📶 انتخاب نوع اتصال
+  - name: 🔀 نوع انتخاب پروکسی
     type: select
     proxies:
       - خودکار (بهترین پینگ) 🤖
       - دستی 🤏🏻
       - ⛔ قطع اینترنت
       - 🛡️ بدون فیلترشکن
+
+  - name: 📶 انتخاب نوع اتصال
+    type: select
+    proxies:
+      - 🌐 همه سایتا
+      - 🔐 فقط سایتای فیلتر شده
 
   - name: دستی 🤏🏻
     type: select
@@ -515,35 +545,35 @@ ${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
     proxies:
       - 🛡️ بدون فیلترشکن
       - 🚫 اجازه ندادن
-      - 📶 انتخاب نوع اتصال
+      - 🔀 نوع انتخاب پروکسی
 
   - name: 🆎 تبلیغات
     type: select
     proxies:
       - 🚫 اجازه ندادن
       - 🛡️ بدون فیلترشکن
-      - 📶 انتخاب نوع اتصال
+      - 🔀 نوع انتخاب پروکسی
 
   - name: 🍃 تصفیه برنامه
     type: select
     proxies:
       - 🚫 اجازه ندادن
       - 🛡️ بدون فیلترشکن
-      - 📶 انتخاب نوع اتصال
+      - 🔀 نوع انتخاب پروکسی
 
   - name: 🛑 رهگیری جهانی
     type: select
     proxies:
       - 🚫 اجازه ندادن
       - 🛡️ بدون فیلترشکن
-      - 📶 انتخاب نوع اتصال
+      - 🔀 نوع انتخاب پروکسی
 
   - name: 🎮 استیم
     type: select
     proxies:
       - 🛡️ بدون فیلترشکن
       - 🚫 اجازه ندادن
-      - 📶 انتخاب نوع اتصال
+      - 🔀 نوع انتخاب پروکسی
 
   - name: 🛡️ بدون فیلترشکن
     type: select
@@ -560,7 +590,18 @@ ${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
     proxies:
       - REJECT
 
+  - name: 🔐 فقط سایتای فیلتر شده
+    type: select
+    proxies:
+      - DIRECT
+
+  - name: 🌐 همه سایتا
+    type: select
+    proxies:
+      - 🔀 نوع انتخاب پروکسی
+
 rules:
+  - RULE-SET,blocked,🔀 نوع انتخاب پروکسی
   - GEOIP,IR,🇮🇷 سایتای ایرانی
   - RULE-SET,steam,🎮 استیم
   - RULE-SET,Purification,🍃 تصفیه برنامه
