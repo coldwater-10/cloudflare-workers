@@ -637,7 +637,6 @@ ${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
     type: select
     proxies:
       - DIRECT
-
   - name: 🌐 همه سایتا
     type: select
     proxies:
