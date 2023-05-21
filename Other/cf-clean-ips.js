@@ -27,7 +27,7 @@ const operatorNames = {
   'apt': '		 in :  ALL APT',
   'fnp': '		 in :  ALL FNP',
   'sbn': '		 in :  ALL SAB',
-  'ptk': '		 in :  ALL PTK',
+  'ptk': '		 in :  ALL PET',
   'ryn': '		 in :  ALL RYN'
 }
 
