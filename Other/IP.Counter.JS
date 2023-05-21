@@ -9,7 +9,7 @@ async function handleRequest(request) {
   if (response.ok) {
     const text = await response.text();
     const words = text.match(/\b[a-z]+\b/gi);
-    const targetWords = ['in ', 'ANTY', 'PLUS', 'ALL', 'MCI', 'IRC', 'ENG', 'SHT', 'SAB', 'MKB', 'IPV6', 'RES', 'FA', 'RTL', 'TEST', 'IRCF', 'MBT', 'AFR', 'AND', 'APT', 'DID', 'ARA', 'SAM', 'PRS', 'ZTL', 'AST', 'HWB', 'FNP', 'RYN', 'PIS', 'SMT', 'FAN'];
+    const targetWords = ['in ', 'ANTY', 'PLUS', 'ALL', 'MCI', 'IRC', 'ENG', 'SHT', 'SAB', 'MKB', 'IPV6', 'RES', 'FA', 'RTL', 'TEST', 'IRCF', 'MBT', 'AFR', 'AND', 'APT', 'DID', 'ARA', 'SAM', 'PRS', 'ZTL', 'AST', 'HWB', 'FNP', 'RYN', 'PIS', 'PET', 'SMT', 'FAN'];
 
     const wordCount = {};
 
