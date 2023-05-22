@@ -382,11 +382,17 @@ rule-providers:
       https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml
     path: ./ruleset/AntiAd.yaml
     interval: 432000
-  bootmortis:
+  iran_other:
     type: http
     behavior: domain
-    url: "https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/clash_rules.yaml"
-    path: ./ruleset/iran.yaml
+    url: "https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/clash_rules_other.yaml"
+    path: ./ruleset/iran_other.yaml
+    interval: 432000
+  iran_ads:
+    type: http
+    behavior: domain
+    url: "https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/clash_rules_ads.yaml"
+    path: ./ruleset/iran_ads.yaml
     interval: 432000
   blocked:
     type: http
@@ -482,7 +488,8 @@ rules:
   - RULE-SET,AntiAd,🆎 تبلیغات
   - RULE-SET,MoreAd,🆎 تبلیغات
   - RULE-SET,iran,🇮🇷 سایتای ایرانی
-  - RULE-SET,bootmortis,🇮🇷 سایتای ایرانی
+  - RULE-SET,iran_other,🇮🇷 سایتای ایرانی
+  - RULE-SET,iran_ads,🆎 تبلیغات
   - MATCH,📶 انتخاب نوع اتصال
 `
    return yaml
