@@ -258,6 +258,7 @@ function toClash(conf, protocol) {
 function toYaml(configList) {
   var yaml = 
 `
+global-client-fingerprint: chrome
 port: 7890
 socks-port: 7891
 redir-port: 7892
@@ -265,6 +266,9 @@ mixed-port: 7893
 tproxy-port: 7895
 allow-lan: true
 log-level: info
+cfw-latency-timeout: 6000
+cfw-latency-url: https://api.v2fly.org/checkConnection.svgz
+cfw-proxies-order: latency
 external-controller: 0.0.0.0:9090
 secret: ''
 bind-address: '*'
@@ -279,56 +283,60 @@ dns:
   enhanced-mode: fake-ip
   listen: 0.0.0.0:7874
   nameserver:
-    - https://xtom-osa-1.edge.nextdns.io/dns-query
-    - https://xtom-osa-1.edge.nextdns.io/
-    - https://170.176.145.150/
-    - https://Doh1.B-Cdn.net/dns-query
-    - https://dns.aa.net.uk/dns-query
-    - https://dns.controld.com/
-    - https://dns.gi.co.id/dns-query
-    - https://dns.melalandia.tk/dns-query
-    - https://dns.quad9.net/dns-query
-    - https://ipv4-zepto-mci-1.edge.nextdns.io/
-    - https://ipv4-zepto-mci-1.edge.nextdns.io/dns-query
-    - https://jp-kix2.doh.sb/
-    - https://nsc.torgues.net/
-    - https://nsc.torgues.net/dns-query
-    - https://res-acst3.absolight.net/
-    - https://xmission-slc-1.edge.nextdns.io/dns-query
-    - https://zepto-sto-1.edge.nextdns.io
-    - https://zepto-sto-1.edge.nextdns.io/
-    - 'https://1.1.1.1/dns-query#en0'
     - https://cloudflare-dns.com/dns-query
+    - 'https://1.1.1.1/dns-query#en0'
     - https://1.1.1.1/dns-query
-    - 1.1.1.1
-    - 1.0.0.1
-    - tls://1.0.0.1:853
-    - tls://1.1.1.1:853
-    - tcp://1.1.1.1
-    - 'tcp://1.1.1.1#en0'
-  fallback:
     - https://dns.google/dns-query
+    - https://dns.quad9.net/dns-query
+    - https://dns.nextdns.io
+    - https://doh.opendns.com/dns-query
+    - https://dns.adguard.com/dns-query
+    - https://dns.surfshark.com/dns-query
     - https://8.8.8.8/dns-query
     - https://9.9.9.9/dns-query
-    - https://rubyfish.cn/dns-query
-    - https://doh.opendns.com/dns-query
-    - https://doh.dns.sb/dns-query
-    - https://doh.pub/dns-query
-    - https://dns.quad9.net/dns-query 
-    - https://dns.nextdns.io 
     - https://doh.cleanbrowsing.org/doh/security-filter/
-    - https://dns.adguard.com/dns-query
     - https://resolver2.dns.watch/dns-query 
     - https://doh-de.blahdns.com/dns-query
-    - https://dns.surfshark.com/dns-query
     - https://freedns.controld.com/p2
     - https://dns.dnswarden.com/adblock
     - https://adblock.doh.mullvad.net/dns-query
     - https://basic.rethinkdns.com/dns-query
+    - tls://1.0.0.1:853
+    - tls://1.1.1.1:853
+    - tls://dns.google:853
+  fallback:
+    - https://dns.aa.net.uk/dns-query
+    - https://rubyfish.cn/dns-query
+    - https://nsc.torgues.net/dns-query
+    - https://xmission-slc-1.edge.nextdns.io/dns-query
+    - https://Doh1.B-Cdn.net/dns-query
+    - https://dns.melalandia.tk/dns-query
+    - https://jp-kix2.doh.sb/
+    - https://dns.gi.co.id/dns-query
+    - https://dns.controld.com/
+    - https://xtom-osa-1.edge.nextdns.io/dns-query
+    - https://170.176.145.150/
+    - https://ipv4-zepto-mci-1.edge.nextdns.io/dns-query
+    - https://res-acst3.absolight.net/
+    - https://zepto-sto-1.edge.nextdns.io
+    - https://xtom-osa-1.edge.nextdns.io/
+    - https://ipv4-zepto-mci-1.edge.nextdns.io/
+    - https://nsc.torgues.net/
+    - https://zepto-sto-1.edge.nextdns.io/
+    - https://doh.dns.sb/dns-query
+    - tls://dns.rubyfish.cn:853
+    - 'tls://8.8.8.8#en0'
+    - tcp://1.1.1.1
+    - 'tcp://8.8.8.8#en0'
+    - 'tcp://1.1.1.1#en0'
+    - dhcp://en0
+    - 1.1.1.1
+    - 1.0.0.1
+    - 9.9.9.9
+    - 4.2.2.4
     - 8.8.8.8
     - 8.8.4.4
-    - 4.2.2.4
-    - 9.9.9.9
+    - '8.8.8.8#en0'
     - 119.29.29.29
     - 223.5.5.5
     - 119.28.28.28
@@ -337,13 +345,6 @@ dns:
     - 127.0.0.1
     - 114.114.114.114
     - 87.118.100.175:110
-    - '8.8.8.8#en0'
-    - dhcp://en0
-    - 'tcp://8.8.8.8#en0'
-    - 'tls://8.8.8.8#en0'
-    - tls://dns.google:853
-    - tls://dns.rubyfish.cn:853
-    - tls://dot.pub:853
   fallback-filter:
     geoip: true
     geoip-code: IR
@@ -546,9 +547,9 @@ proxy-groups:
     proxies:
       - خودکار (بهترین پینگ) 🤖
       - دستی 🤏🏻
-      - بازگشتی (بهترین پینگ) ➡️
-      - تعادل بار (هش ثابت) ♻️
-      - تعادل بار (زمان بندی) ⏳
+      - پشتیبان (بهترین پینگ) ➡️
+      - توزیع بار (هش سازگار) ♻️
+      - توزیع بار (یکنواخت) ⏳
       - ⛔ قطع اینترنت
       - 🛡️ بدون فیلترشکن
   - name: 📶 انتخاب نوع اتصال
@@ -562,29 +563,32 @@ proxy-groups:
 ${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
   - name: خودکار (بهترین پینگ) 🤖
     type: url-test
-    url: http://clients3.google.com/generate_204
-    interval: 300
+    url: https://api.v2fly.org/checkConnection.svgz
+    interval: 600
+    tolerance: 180
     proxies:
 ${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
-  - name: بازگشتی (بهترین پینگ) ➡️
+  - name: پشتیبان (بهترین پینگ) ➡️
     type: fallback
-    url: http://clients3.google.com/generate_204
-    interval: 300
+    url: https://api.v2fly.org/checkConnection.svgz
+    interval: 600
+    tolerance: 180
     proxies:
 ${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
-  - name: تعادل بار (هش ثابت) ♻️
+  - name: توزیع بار (هش سازگار) ♻️
     type: load-balance
     strategy: consistent-hashing
-    url: http://clients3.google.com/generate_204
-    interval: 300
+    url: https://api.v2fly.org/checkConnection.svgz
+    interval: 600
+    tolerance: 180
     proxies:
 ${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
-  - name: تعادل بار (زمان بندی) ⏳
+  - name: توزیع بار (یکنواخت) ⏳
     type: load-balance
     strategy: round-robin
-    url: http://clients3.google.com/generate_204
-    interval: 300
-    tolerance: 100
+    url: https://api.v2fly.org/checkConnection.svgz
+    interval: 600
+    tolerance: 180
     proxies:
 ${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
   - name: 🇮🇷 سایتای ایرانی
