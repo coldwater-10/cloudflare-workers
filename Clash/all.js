@@ -271,6 +271,9 @@ cfw-proxies-order: latency
 external-controller: 0.0.0.0:9090
 secret: ''
 bind-address: '*'
+#hosts:
+  # '*.workers.dev': 185.59.218.86
+  # '.workers.dev': 185.59.218.86
 unified-delay: true
 profile:
   store-selected: true
