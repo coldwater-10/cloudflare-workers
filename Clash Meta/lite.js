@@ -272,6 +272,9 @@ mode: rule
 log-level: info
 ipv6: true
 external-controller: 127.0.0.1:9090
+#hosts:
+  # '*.workers.dev': 185.59.218.86
+  # '.workers.dev': 185.59.218.86
 profile:
   store-selected: false 
   store-fake-ip: true
