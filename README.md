@@ -7,6 +7,8 @@
 [با پروکسیای فرینود](https://github.com/coldwater-10/cloudflare-workers/blob/main/Clash/freenode.js)
 (باید از [سایت فرینود](https://getafreenode.com/?inviter=82060F61-1C03-418D-99D4-D555CECB2FF4) لینک اشتراک بگیرین و چندبار توی کد جایگزین کنینش)
 
+[با پروکسیای فرینود]([با پروکسیای فرینود](https://github.com/coldwater-10/cloudflare-workers/blob/main/Clash/freenode.js) (فقط تغییر آیپی = به محدودیت ورکر نمیخورین)
+
 [با همه لینکای اشتراک پروکسی](https://github.com/coldwater-10/cloudflare-workers/blob/main/Clash/all.js)
 
 
