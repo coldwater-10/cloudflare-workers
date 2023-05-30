@@ -422,6 +422,12 @@ rule-providers:
     url: "https://raw.githubusercontent.com/coldwater-10/clash_rules/main/blocked-sites.yml"
     path: ./ruleset/blocked.yaml
     interval: 432000
+  tahrim:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/coldwater-10/clash_rules/main/tahrim.yaml"
+    path: ./ruleset/tahrim.yaml
+    interval: 432000
 
 proxies:
 ${configList.map(cnf => "  - " + JSON.stringify(cnf)).join("\n")}
@@ -456,6 +462,12 @@ ${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
       - 🛡️ بدون فیلترشکن
       - 🚫 اجازه ندادن
       - 🔀 نوع انتخاب پروکسی
+  - name: 🏴‍☠️ سایتای تحریمی
+    type: select
+    proxies:
+      - 🔀 نوع انتخاب پروکسی
+      - 🛡️ بدون فیلترشکن
+      - 🚫 اجازه ندادن
   - name: 🆎 تبلیغات
     type: select
     proxies:
@@ -516,6 +528,7 @@ rules:
   - RULE-SET,iran,🇮🇷 سایتای ایرانی
   - RULE-SET,iran_other,🇮🇷 سایتای ایرانی
   - RULE-SET,iran_ads,🆎 تبلیغات
+  - RULE-SET,tahrim,🏴‍☠️ سایتای تحریمی
   - MATCH,📶 انتخاب نوع اتصال
 `
    return yaml
