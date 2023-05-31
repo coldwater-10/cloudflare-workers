@@ -626,16 +626,15 @@ ${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
 rules:
   - RULE-SET,blocked,🔀 نوع انتخاب پروکسی
   - GEOIP,IR,🇮🇷 سایتای ایرانی
+  - RULE-SET,iran,🇮🇷 سایتای ایرانی
+  - RULE-SET,iran_other,🇮🇷 سایتای ایرانی
   - RULE-SET,steam,🎮 استیم
   - RULE-SET,Purification,🍃 تصفیه برنامه
   - RULE-SET,Global,🛑 رهگیری جهانی
   - RULE-SET,add,🆎 تبلیغات
   - RULE-SET,AntiAd,🆎 تبلیغات
   - RULE-SET,MoreAd,🆎 تبلیغات
-  - RULE-SET,iran,🇮🇷 سایتای ایرانی
-  - RULE-SET,iran_other,🇮🇷 سایتای ایرانی
   - RULE-SET,iran_ads,🆎 تبلیغات
-  - RULE-SET,tahrim,🏴‍☠️ سایتای تحریمی
   - IP-CIDR,23.109.87.42/32,🆎 تبلیغات,no-resolve
   - IP-CIDR,23.109.87.101/32,🆎 تبلیغات,no-resolve
   - IP-CIDR,35.232.188.118/32,🆎 تبلیغات,no-resolve
@@ -729,6 +728,7 @@ rules:
   - IP-CIDR,223.87.182.102/32,🍃 تصفیه برنامه,no-resolve
   - IP-CIDR,223.87.182.11/32,🍃 تصفیه برنامه,no-resolve
   - IP-CIDR,223.87.182.52/32,🍃 تصفیه برنامه,no-resolve
+  - RULE-SET,tahrim,🏴‍☠️ سایتای تحریمی
   - MATCH,📶 انتخاب نوع اتصال
 `
 return yaml;

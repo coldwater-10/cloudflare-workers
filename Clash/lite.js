@@ -500,14 +500,14 @@ ${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
 rules:
   - RULE-SET,blocked,🔀 نوع انتخاب پروکسی
   - GEOIP,IR,🇮🇷 سایتای ایرانی
+  - RULE-SET,iran,🇮🇷 سایتای ایرانی
+  - RULE-SET,iran_other,🇮🇷 سایتای ایرانی
   - RULE-SET,steam,🎮 استیم
   - RULE-SET,Purification,🍃 تصفیه برنامه
   - RULE-SET,Global,🛑 رهگیری جهانی
   - RULE-SET,add,🆎 تبلیغات
   - RULE-SET,AntiAd,🆎 تبلیغات
   - RULE-SET,MoreAd,🆎 تبلیغات
-  - RULE-SET,iran,🇮🇷 سایتای ایرانی
-  - RULE-SET,iran_other,🇮🇷 سایتای ایرانی
   - RULE-SET,iran_ads,🆎 تبلیغات
   - RULE-SET,tahrim,🏴‍☠️ سایتای تحریمی
   - MATCH,📶 انتخاب نوع اتصال
