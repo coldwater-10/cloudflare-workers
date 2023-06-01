@@ -428,6 +428,19 @@ rule-providers:
     url: "https://raw.githubusercontent.com/coldwater-10/clash_rules/main/tahrim.yaml"
     path: ./ruleset/tahrim.yaml
     interval: 432000
+  ads_ip:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/coldwater-10/clash_rules/main/ads%20ip.yaml
+    path: ./ruleset/adsip.yaml
+    interval: 432000
+  Purification_ip:
+    type: http
+    behavior: classical
+    url: >-
+      https://raw.githubusercontent.com/coldwater-10/clash_rules/main/Purification%20app%20ip.yaml
+    path: ./ruleset/Purificationip.yaml
+    interval: 432000
 
 proxies:
 ${configList.map(cnf => "  - " + JSON.stringify(cnf)).join("\n")}
@@ -515,21 +528,23 @@ ${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
 
 rules:
   - RULE-SET,blocked,🔀 نوع انتخاب پروکسی
-  - GEOIP,IR,🇮🇷 سایتای ایرانی
   - GEOSITE,category-ir,🇮🇷 سایتای ایرانی
+  - GEOIP,IR,🇮🇷 سایتای ایرانی
   - RULE-SET,iran,🇮🇷 سایتای ایرانی
   - RULE-SET,iran_other,🇮🇷 سایتای ایرانی
+  - RULE-SET,Purification_ip,🍃 تصفیه برنامه,no-resolve
   - RULE-SET,Purification,🍃 تصفیه برنامه
-  - RULE-SET,Global,🛑 رهگیری جهانی
   - GEOSITE,win-spy,🛑 رهگیری جهانی
+  - RULE-SET,Global,🛑 رهگیری جهانی
   - RULE-SET,steam,🎮 استیم
+  - RULE-SET,ads_ip,🆎 تبلیغات,no-resolve
   - GEOSITE,category-ads-all,🆎 تبلیغات 
+  - RULE-SET,iran_ads,🆎 تبلیغات
   - RULE-SET,add,🆎 تبلیغات
   - RULE-SET,AntiAd,🆎 تبلیغات
   - RULE-SET,MoreAd,🆎 تبلیغات
-  - RULE-SET,iran_ads,🆎 تبلیغات
   - RULE-SET,tahrim,🏴‍☠️ سایتای تحریمی
   - MATCH,📶 انتخاب نوع اتصال
 `
-   return yaml
+return yaml;
 }
