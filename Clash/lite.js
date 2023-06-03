@@ -173,7 +173,7 @@ function mixConfig(conf, url, protocol) {
     if (!addr) {
       return conf
     }
-    conf.name = (conf.name ? conf.name : conf.ps) + '-Worker'
+    conf.name = (conf.name ? conf.name : conf.ps) + '-👷'
     conf.sni = url.hostname
     if (cleanIPs.length) {
       conf.add = cleanIPs[Math.floor(Math.random() * cleanIPs.length)]
@@ -225,7 +225,7 @@ function toClash(conf, protocol) {
   var config = {}
   try {
     config = {
-      name: conf.name ? conf.name : conf.ps,
+      name: (conf.name ? conf.name : conf.ps).replace("GetAFreeNode.com", "FreeNode"),
       type: protocol,
       server: conf.add,
       port: conf.port,
@@ -243,8 +243,20 @@ function toClash(conf, protocol) {
         }
       }
     }
-    config.name = config.name.replace(/[^\x20-\x7E]/g, "").replace(/[\s\/:|\[\]@\(\)\.]/g, "") + "-" + proxyCount;
-    proxyCount++;
+
+    // Add flags based on location
+    if (config.name.includes("Lille")) {
+      config.name = "🇫🇷" + config.name;
+    } else if (config.name.includes("Amsterdam")) {
+      config.name = "🇳🇱" + config.name;
+    } else if (config.name.includes("Kansas")) {
+      config.name = "🇺🇸" + config.name;
+    } else if (config.name.includes("Dusseldorf")) {
+      config.name = "🇩🇪" + config.name;
+    }
+
+    // Increment proxyCount
+    config.name += "-" + "ip:" + conf.add + "-🔢" + (proxyCount++);
     if (!regexUUID.test(config.uuid)) {
       return {}
     }
@@ -268,8 +280,7 @@ cfw-proxies-order: latency
 ipv6: true
 external-controller: 127.0.0.1:9090
 #hosts:
-  # '*.workers.dev': 185.59.218.86
-  # '.workers.dev': 185.59.218.86
+  # '+.workers.dev': 185.59.218.86
 profile:
   store-selected: false 
   store-fake-ip: true
@@ -286,6 +297,7 @@ dns:
   use-hosts: true
   nameserver:
     - https://cloudflare-dns.com/dns-query
+    - 'https://1.1.1.1/dns-query#en0'
     - https://1.1.1.1/dns-query
     - https://dns.google/dns-query
     - https://dns.quad9.net/dns-query
@@ -305,7 +317,8 @@ dns:
     - tls://1.0.0.1:853
     - tls://1.1.1.1:853
     - tls://dns.google:853
-  fallback:
+    - 162.159.36.1
+    - 162.159.46.1
     - https://dns.aa.net.uk/dns-query
     - https://rubyfish.cn/dns-query
     - https://nsc.torgues.net/dns-query
@@ -320,32 +333,13 @@ dns:
     - https://ipv4-zepto-mci-1.edge.nextdns.io/dns-query
     - https://res-acst3.absolight.net/
     - https://zepto-sto-1.edge.nextdns.io
+    - https://xtom-osa-1.edge.nextdns.io/
+    - https://ipv4-zepto-mci-1.edge.nextdns.io/
+    - https://nsc.torgues.net/
+    - https://zepto-sto-1.edge.nextdns.io/
     - https://doh.dns.sb/dns-query
     - tls://dns.rubyfish.cn:853
     - 'tls://8.8.8.8#en0'
-    - dhcp://en0
-  fallback-filter:
-    geoip: false
-    ipcidr:
-      - '0.0.0.0/8'
-      - '10.0.0.0/8'
-      - '100.64.0.0/10'
-      - '127.0.0.0/8'
-      - '169.254.0.0/16'
-      - '172.16.0.0/12'
-      - '192.0.0.0/24'
-      - '192.0.2.0/24'
-      - '192.88.99.0/24'
-      - '192.168.0.0/16'
-      - '198.18.0.0/15'
-      - '198.51.100.0/24'
-      - '203.0.113.0/24'
-      - '224.0.0.0/3'
-      - '240.0.0.0/4'
-      - '::1/128'
-      - '64:ff9b:1::/48'
-      - 'fc00::/7'
-      - 'fe80::/10'
 
 rule-providers:
   iran:
