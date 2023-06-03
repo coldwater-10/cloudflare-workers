@@ -225,7 +225,7 @@ function toClash(conf, protocol) {
   var config = {}
   try {
     config = {
-      name: (conf.name ? conf.name : conf.ps).replace("GetAFreeNode.com", "FreeNode"),
+      name: (conf.name ? conf.name : conf.ps).replace("www.", ""),
       type: protocol,
       server: conf.add,
       port: conf.port,
@@ -242,17 +242,6 @@ function toClash(conf, protocol) {
           host: conf.host
         }
       }
-    }
-
-    // Add flags based on location
-    if (config.name.includes("Lille")) {
-      config.name = "🇫🇷" + config.name;
-    } else if (config.name.includes("Amsterdam")) {
-      config.name = "🇳🇱" + config.name;
-    } else if (config.name.includes("Kansas")) {
-      config.name = "🇺🇸" + config.name;
-    } else if (config.name.includes("Dusseldorf")) {
-      config.name = "🇩🇪" + config.name;
     }
 
     // Increment proxyCount

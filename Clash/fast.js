@@ -203,7 +203,7 @@ function toClash(conf, protocol) {
   var config = {}
   try {
     config = {
-      name: (conf.name ? conf.name : conf.ps).replace("GetAFreeNode.com", "FreeNode"),
+      name: (conf.name ? conf.name : conf.ps).replace("www.", ""),
       type: protocol,
       server: conf.add,
       port: conf.port,
