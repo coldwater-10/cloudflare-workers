@@ -225,8 +225,10 @@ function isIp(str) {
 let proxyCount = 1;
 
 function toClash(conf, protocol) {
-  const regexUUID = /^[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}$/gi
-  var config = {}
+  const regexUUID = /^[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}$/gi;
+  
+  var config = {};
+  
   try {
     config = {
       name: conf.name ? conf.name : conf.ps,
@@ -246,14 +248,17 @@ function toClash(conf, protocol) {
           host: conf.host
         }
       }
-    }
-    config.name = config.name.replace(/[^\x20-\x7E]/g, "").replace(/[\s\/:|\[\]@\(\)\.]/g, "") + "ip:" + conf.add + "-🔢" + "-" + proxyCount++
+    };
+    
+    config.name = config.name.replace(/[^\u0000-\u007F\u0600-\u06FF\[\]\/\\:|@\(\).,#$%&*+=;~{}"'\-_?<>\^]+/gu, '') + "ip:" + conf.add + "-🔢" + "-" + proxyCount++;
+    
     if (!regexUUID.test(config.uuid)) {
-      return {}
+      return {};
     }
-    return config
+    
+    return config;
   } catch (e) {
-    return {}
+    return {};
   }
 }
 
