@@ -176,7 +176,7 @@ function mixConfig(conf, url, protocol) {
     var originalHost = conf.host
     var originalPort = conf.port
 
-    conf.name = (conf.name ? conf.name : conf.ps) + '-Worker'
+    conf.name = (conf.name ? conf.name : conf.ps) + ''
     conf.sni = url.hostname
     if (cleanIPs.length) {
       conf.add = cleanIPs[Math.floor(Math.random() * cleanIPs.length)]

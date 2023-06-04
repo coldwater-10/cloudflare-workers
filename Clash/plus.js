@@ -251,7 +251,8 @@ function toClash(conf, protocol) {
       }
     };
     
-    config.name = config.name.replace(/[^\u0000-\u007F\u0600-\u06FF\[\]\/\\:|@\(\).,#$%&*+=;~{}"'\-_?<>\^]+/gu, '') + "ip:" + conf.add + "-🔢" + "-" + proxyCount++;
+    config.name = config.name.replace(/\s/g, '')
+    config.name = config.name.replace(/[^\u0000-\u007F\u0600-\u06FF\[\]\/\\:|@\(\).,#$%&*+=;~{}"'\-_?<>\^]+/gu, '') + "ℹ️" + conf.add + "-🔢" + "-" + proxyCount++;
     
     if (!regexUUID.test(config.uuid)) {
       return {};

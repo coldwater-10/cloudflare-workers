@@ -264,7 +264,7 @@ function toClash(conf, protocol) {
     }
 
     // Increment proxyCount
-    config.name += "-" + "ip:" + conf.add + "-🔢" + (proxyCount++);
+    config.name += "-" + "ℹ️" + conf.add + "-🔢" + (proxyCount++);
     if (!regexUUID.test(config.uuid)) {
       return {}
     }

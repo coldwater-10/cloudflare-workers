@@ -176,7 +176,7 @@ function mixConfig(conf, url, protocol) {
     var originalHost = conf.host
     var originalPort = conf.port
 
-    conf.name = (conf.name ? conf.name : conf.ps) + '-👷'
+    conf.name = (conf.name ? conf.name : conf.ps) + ''
     conf.sni = url.hostname
     if (cleanIPs.length) {
       conf.add = cleanIPs[Math.floor(Math.random() * cleanIPs.length)]
@@ -270,7 +270,7 @@ function toClash(conf, protocol) {
     }
 
     // Increment proxyCount
-    config.name += "-" + "ip:" + conf.add + "-🔢" + (proxyCount++);
+    config.name += "-" + "ℹ️" + conf.add + "-🔢" + (proxyCount++);
     if (!regexUUID.test(config.uuid)) {
       return {}
     }
