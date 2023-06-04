@@ -229,7 +229,7 @@ function toClash(conf, protocol) {
   var config = {}
   try {
     config = {
-      name: (conf.name ? conf.name : conf.ps).replace("www.", ""),
+      name: conf.name ? conf.name : conf.ps,
       type: protocol,
       server: conf.add,
       port: conf.port,
@@ -247,9 +247,7 @@ function toClash(conf, protocol) {
         }
       }
     }
-
-    // Increment proxyCount
-    config.name += "-" + "ip:" + conf.add + "-🔢" + (proxyCount++);
+    config.name = config.name.replace(/[^\x20-\x7E]/g, "").replace(/[\s\/:|\[\]@\(\)\.]/g, "") + "ip:" + conf.add + "-🔢" + "-" + proxyCount++
     if (!regexUUID.test(config.uuid)) {
       return {}
     }

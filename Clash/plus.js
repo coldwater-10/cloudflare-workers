@@ -230,7 +230,7 @@ function toClash(conf, protocol) {
   var config = {}
   try {
     config = {
-      name: (conf.name ? conf.name : conf.ps).replace("www.", ""),
+      name: conf.name ? conf.name : conf.ps,
       type: protocol,
       server: conf.add,
       port: conf.port,
@@ -248,20 +248,7 @@ function toClash(conf, protocol) {
         }
       }
     }
-
-    // Add flags based on location
-    if (config.name.includes("Lille")) {
-      config.name = "🇫🇷" + config.name;
-    } else if (config.name.includes("Amsterdam")) {
-      config.name = "🇳🇱" + config.name;
-    } else if (config.name.includes("Kansas")) {
-      config.name = "🇺🇸" + config.name;
-    } else if (config.name.includes("Dusseldorf")) {
-      config.name = "🇩🇪" + config.name;
-    }
-
-    // Increment proxyCount
-    config.name += "-" + "ip:" + conf.add + "-🔢" + (proxyCount++);
+    config.name = config.name.replace(/[^\x20-\x7E]/g, "").replace(/[\s\/:|\[\]@\(\)\.]/g, "") + "ip:" + conf.add + "-🔢" + "-" + proxyCount++
     if (!regexUUID.test(config.uuid)) {
       return {}
     }
