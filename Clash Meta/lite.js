@@ -14,6 +14,9 @@ const subLinks = [
   "https://ghproxy.net/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt",
   "https://fastly.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.txt",
   "https://cdn.staticaly.com/gh/peasoft/NoMoreWalls/master/list.txt",
+  "https://raw.githubusercontent.com/RescueNet/TelegramFreeServer/main/base64/vmess",
+  "https://raw.githubusercontent.com/RescueNet/TelegramFreeServer/main/base64/reality",
+  "https://raw.githubusercontent.com/RescueNet/TelegramFreeServer/main/base64/temporary",
   "https://raw.githubusercontent.com/vpei/Free-Node-Merge/main/o/node.txt",
   "https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg",
   "https://raw.fastgit.org/codingbox/Free-Node-Merge/main/node.txt",
@@ -22,6 +25,7 @@ const subLinks = [
   "https://raw.githubusercontent.com/ssrsub/ssr/master/ss-sub",
   "https://raw.githubusercontent.com/ssrsub/ssr/master/trojan",
   "https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray",
+  "https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription_num",
   "https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1",
   "https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription2",
   "https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3",
@@ -37,6 +41,9 @@ const subLinks = [
   "https://free.iam7.tk/vmess/sub",
   "https://free.jingfu.cf/vmess/sub",
   "https://free.jingfu.cf/trojan/sub",
+  "https://github.xiaoku666.tk/https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub",
+  "https://raw.githubusercontent.com/tbbatbb/Proxy/master/dist/v2ray.config.txt",
+  "https://raw.fastgit.org/ripaojiedian/freenode/main/sub",
   "https://raw.githubusercontent.com/learnhard-cn/free_proxy_ss/main/free",
   "https://raw.githubusercontent.com/learnhard-cn/free_proxy_ss/main/v2ray/v2raysub"
 ]

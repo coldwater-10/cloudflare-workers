@@ -41,6 +41,9 @@ const subLinks = [
   "https://free.iam7.tk/vmess/sub",
   "https://free.jingfu.cf/vmess/sub",
   "https://free.jingfu.cf/trojan/sub",
+  "https://github.xiaoku666.tk/https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub",
+  "https://raw.githubusercontent.com/tbbatbb/Proxy/master/dist/v2ray.config.txt",
+  "https://raw.fastgit.org/ripaojiedian/freenode/main/sub",
   "https://raw.githubusercontent.com/learnhard-cn/free_proxy_ss/main/free",
   "https://raw.githubusercontent.com/learnhard-cn/free_proxy_ss/main/v2ray/v2raysub"
 ]
