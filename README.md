@@ -165,6 +165,11 @@
 
 ©️ اطلاعاتش رو از گیتهاب [curl](https://github.com/curl/curl/wiki/DNS-over-HTTPS) میگیره
 
+### لیست DNSCrypt های عمومی
+  [نمونه خروجی](https://s-d-n-s-list.vpnclashfa.workers.dev)  -  [کد ورکرش](https://github.com/coldwater-10/cloudflare-workers/blob/main/Other/sdns-list.js)
+
+©️ اطلاعاتش رو از گیتهاب [dnscrypt](https://github.com/dnscrypt) میگیره
+
 
 <div style="display: flex; justify-content: space-between; align-items: center; width: 300px;">
     <a href="https://t.me/vpnclashfa"><img src="https://cdn.dribbble.com/users/4507400/screenshots/15420681/media/c00f77bc443cbc4ac96d138f9ac854c5.gif" alt="Telegram" width="100" height="100"></a>
