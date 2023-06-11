@@ -42,6 +42,8 @@ const subLinks = [
   "https://free.jingfu.cf/vmess/sub",
   "https://free.jingfu.cf/trojan/sub",
   "https://github.xiaoku666.tk/https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub",
+  "https://raw.githubusercontent.com/MrPooyaX/VpnsFucking/main/Shenzo.txt",
+  "https://raw.githubusercontent.com/MrPooyaX/SansorchiFucker/main/data.txt",
   "https://raw.githubusercontent.com/tbbatbb/Proxy/master/dist/v2ray.config.txt",
   "https://raw.fastgit.org/ripaojiedian/freenode/main/sub",
   "https://raw.githubusercontent.com/mlabalabala/v2ray-node/main/vm_static_node.txt",
@@ -51,6 +53,7 @@ const subLinks = [
 const cnfLinks = [
   "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/sub/sub_merge.txt",
   "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.txt",
+  "https://raw.githubusercontent.com/Bardiafa/Free-V2ray-Config/main/All_Configs_Sub.txt",
   "https://raw.githubusercontent.com/hossein-mohseni/Free-V2ray-Config/main/All_Configs_Sub.txt",
   "https://raw.githubusercontent.com/AlienVPN402/AlienVPN402-subscribe-servers/main/index.html",
   "https://alienvpn402.github.io/AlienVPN402-subscribe-servers/",
