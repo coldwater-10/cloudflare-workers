@@ -167,45 +167,39 @@ function decodeVmess(conf) {
 
 function mixConfig(conf, url, protocol) {
   try {
-    if (conf.tls !== "tls") {
+    if (conf.tls != "tls") {
       return {}
     }
-    var sni = conf.sni
-    var path = conf.path
-    var addr = sni || conf.add || conf.host
-    var originalHost = conf.host
-    var originalPort = conf.port
-
-    conf.name = (conf.name ? conf.name : conf.ps) + ''
-    conf.sni = url.hostname
+    var addr = conf.sni
+    if (!addr) {
+      if (conf.add && !isIp(conf.add)) {
+        addr = conf.add
+      } else if (conf.host && !isIp(conf.host)) {
+        addr = conf.host
+      }
+    }
+    if (!addr) {
+      return conf
+    }
+    conf.name = (conf.name ? conf.name : conf.ps)
+    conf.sni = conf.sni
     if (cleanIPs.length) {
       conf.add = cleanIPs[Math.floor(Math.random() * cleanIPs.length)]
     } else {
       conf.add = addressList[Math.floor(Math.random() * addressList.length)]
     }
+    
     if (protocol == "vmess") {
-      conf.sni = url.hostname
-      conf.host = url.hostname
-      if (conf.path == undefined || conf.path === "/path/to/resource") {
-        conf.path = "/path/to/resource"
-      } else {
-        conf.path = "/" + addr + ":" + originalPort + "/" + conf.path.replace(/^\//g, "")
+      conf.sni = conf.sni
+      conf.host = conf.host
+      if (conf.path == undefined) {
+        conf.path = ""
       }
+      conf.path = conf.path + "?ed=2048"
       conf.fp = fpList[Math.floor(Math.random() * fpList.length)]
       conf.alpn = alpnList[Math.floor(Math.random() * alpnList.length)]
-      conf.port = originalPort
+      conf.port = conf.port
     }
-
-    if (typeof sni !== 'undefined') {
-      conf.sni = sni
-    }
-    if (typeof path !== 'undefined') {
-      conf.path = path
-    }
-    if (typeof originalHost !== 'undefined') {
-      conf.host = originalHost
-    }
-
     return conf
   } catch (e) {
     return {}
@@ -232,8 +226,6 @@ function isIp(str) {
   return false
 }
 
-let proxyCount = 1;
-
 function toClash(conf, protocol) {
   const regexUUID = /^[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}$/gi
   var config = {}
@@ -257,8 +249,7 @@ function toClash(conf, protocol) {
         }
       }
     }
-    config.name = config.name.replace(/[^\x20-\x7E]/g, "").replace(/[\s\/:|\[\]@\(\)\.]/g, "") + "-" + proxyCount;
-    proxyCount++;
+    config.name = config.name.replace(/[^\x20-\x7E]/g, "").replace(/[\s\/:|\[\]@\(\)\.]/g, "") + "-" + Math.floor(Math.random() * 10000)
     if (!regexUUID.test(config.uuid)) {
       return {}
     }
@@ -271,7 +262,6 @@ function toClash(conf, protocol) {
 function toYaml(configList) {
   var yaml = 
 `
-
 `
-return yaml;
+   return yaml
 }

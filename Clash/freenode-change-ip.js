@@ -167,45 +167,39 @@ function decodeVmess(conf) {
 
 function mixConfig(conf, url, protocol) {
   try {
-    if (conf.tls !== "tls") {
+    if (conf.tls != "tls") {
       return {}
     }
-    var sni = conf.sni
-    var path = conf.path
-    var addr = sni || conf.add || conf.host
-    var originalHost = conf.host
-    var originalPort = conf.port
-
-    conf.name = (conf.name ? conf.name : conf.ps) + ''
-    conf.sni = url.hostname
+    var addr = conf.sni
+    if (!addr) {
+      if (conf.add && !isIp(conf.add)) {
+        addr = conf.add
+      } else if (conf.host && !isIp(conf.host)) {
+        addr = conf.host
+      }
+    }
+    if (!addr) {
+      return conf
+    }
+    conf.name = (conf.name ? conf.name : conf.ps)
+    conf.sni = conf.sni
     if (cleanIPs.length) {
       conf.add = cleanIPs[Math.floor(Math.random() * cleanIPs.length)]
     } else {
       conf.add = addressList[Math.floor(Math.random() * addressList.length)]
     }
+    
     if (protocol == "vmess") {
-      conf.sni = url.hostname
-      conf.host = url.hostname
-      if (conf.path == undefined || conf.path === "/path/to/resource") {
-        conf.path = "/path/to/resource"
-      } else {
-        conf.path = "/" + addr + ":" + originalPort + "/" + conf.path.replace(/^\//g, "")
+      conf.sni = conf.sni
+      conf.host = conf.host
+      if (conf.path == undefined) {
+        conf.path = ""
       }
+      conf.path = conf.path + "?ed=2048"
       conf.fp = fpList[Math.floor(Math.random() * fpList.length)]
       conf.alpn = alpnList[Math.floor(Math.random() * alpnList.length)]
-      conf.port = originalPort
+      conf.port = conf.port
     }
-
-    if (typeof sni !== 'undefined') {
-      conf.sni = sni
-    }
-    if (typeof path !== 'undefined') {
-      conf.path = path
-    }
-    if (typeof originalHost !== 'undefined') {
-      conf.host = originalHost
-    }
-
     return conf
   } catch (e) {
     return {}
@@ -298,7 +292,6 @@ external-controller: 0.0.0.0:9090
 secret: ''
 bind-address: '*'
 #hosts:
-  # '+.kotick.site': 185.59.218.86
   # '+.workers.dev': 185.59.218.86
 unified-delay: true
 profile:

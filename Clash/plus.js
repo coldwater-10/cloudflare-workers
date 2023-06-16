@@ -3,6 +3,7 @@ const maxPerType = 300
 const includeOriginalConfigs = 0
 
 const subLinks = [
+  "https://raw.githubusercontent.com/coldwater-10/Free-V2ray-Config/main/Splitted-By-Protocol/vmess.txt",
   "https://raw.githubusercontent.com/freefq/free/master/v2",
   "https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub",
   "https://raw.githubusercontent.com/AzadNetCH/Clash/main/V2Ray.txt",

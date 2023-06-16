@@ -195,7 +195,7 @@ function mixConfig(conf, url, protocol) {
       if (conf.path == undefined) {
         conf.path = ""
       }
-      conf.path = "/" + addr + ":" + conf.port + "/" + conf.path.replace(/^\//g, "")
+      conf.path = "/" + addr + ":" + conf.port + "/" + conf.path.replace(/^\//g, "") + "?ed=2048"
       conf.fp = fpList[Math.floor(Math.random() * fpList.length)]
       conf.alpn = alpnList[Math.floor(Math.random() * alpnList.length)]
       conf.port = 443
