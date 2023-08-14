@@ -523,6 +523,12 @@ rule-providers:
     url: "https://raw.githubusercontent.com/coldwater-10/clash_rules/main/tahrim.yaml"
     path: ./ruleset/tahrim.yaml
     interval: 432000
+  censor:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/coldwater-10/clash_rules/main/censor.yaml"
+    path: ./ruleset/tahrim.yaml
+    interval: 432000
   ads_ip:
     type: http
     behavior: classical
@@ -601,6 +607,12 @@ ${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
       - 🔀 نوع انتخاب پروکسی
       - 🛡️ بدون فیلترشکن
       - 🚫 اجازه ندادن
+  - name: 🤬 سایتای سانسوری
+    type: select
+    proxies:
+      - 🚫 اجازه ندادن
+      - 🔀 نوع انتخاب پروکسی
+      - 🛡️ بدون فیلترشکن
   - name: 🆎 تبلیغات
     type: select
     proxies:
@@ -648,21 +660,37 @@ ${configList.map(cnf => "      - " + cnf.name.trim()).join("\n")}
 
 rules:
   - RULE-SET,blocked,🔀 نوع انتخاب پروکسی
+  - RULE-SET,censor,🤬 سایتای سانسوری
+  - RULE-SET,local_ips,🛡️ بدون فیلترشکن
+  - RULE-SET,private,🛡️ بدون فیلترشکن
   - GEOIP,IR,🇮🇷 سایتای ایرانی
+  - RULE-SET,category_ir,🇮🇷 سایتای ایرانی
   - RULE-SET,iran,🇮🇷 سایتای ایرانی
   - RULE-SET,iran_other,🇮🇷 سایتای ایرانی
   - RULE-SET,steam,🎮 استیم
   - RULE-SET,Purification_ip,🍃 تصفیه برنامه,no-resolve
   - RULE-SET,Purification,🍃 تصفیه برنامه
+  - RULE-SET,category_public_tracker,🛑 رهگیری جهانی
   - RULE-SET,Global,🛑 رهگیری جهانی
+  - RULE-SET,category_ads_all,🆎 تبلیغات
   - RULE-SET,iran_ads,🆎 تبلیغات
   - RULE-SET,ads_ip,🆎 تبلیغات,no-resolve
   - RULE-SET,add,🆎 تبلیغات
   - RULE-SET,MoreAd,🆎 تبلیغات
   - RULE-SET,AntiAd,🆎 تبلیغات
   - RULE-SET,tahrim,🏴‍☠️ سایتای تحریمی
+  - RULE-SET,category_porn,🔀 نوع انتخاب پروکسی
+  - RULE-SET,facebook,🔀 نوع انتخاب پروکسی
+  - RULE-SET,youtube,🔀 نوع انتخاب پروکسی
+  - RULE-SET,instagram,🔀 نوع انتخاب پروکسی
+  - RULE-SET,spotify,🔀 نوع انتخاب پروکسی
+  - RULE-SET,twitter,🔀 نوع انتخاب پروکسی
+  - RULE-SET,telegram,🔀 نوع انتخاب پروکسی
+  - RULE-SET,openai,🔀 نوع انتخاب پروکسی
+  - RULE-SET,whatsapp,🔀 نوع انتخاب پروکسی
+  - RULE-SET,tiktok,🔀 نوع انتخاب پروکسی
+  - RULE-SET,twitch,🔀 نوع انتخاب پروکسی
   - MATCH,📶 انتخاب نوع اتصال
 `
 return yaml;
 }
-
