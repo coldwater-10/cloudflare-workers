@@ -655,6 +655,12 @@ rule-providers:
        https://raw.githubusercontent.com/Kr328/V2rayDomains2Clash/generated/local-ips.yaml
     path: ./ruleset/local_ips.yaml
     interval: 432000
+  GoodbyeAds:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/coldwater-10/clash_rules/main/GoodbyeAds.yaml
+    interval: 432000
+    path: ./ruleset/add.yaml
 
 proxies:
 ${configList.map(cnf => "  - " + JSON.stringify(cnf)).join("\n")}
@@ -782,6 +788,7 @@ rules:
   - RULE-SET,add,🆎 تبلیغات
   - RULE-SET,MoreAd,🆎 تبلیغات
   - RULE-SET,AntiAd,🆎 تبلیغات
+  - RULE-SET,GoodbyeAds,🆎 تبلیغات
   - RULE-SET,tahrim,🏴‍☠️ سایتای تحریمی
   - RULE-SET,category_porn,🔀 نوع انتخاب پروکسی
   - RULE-SET,facebook,🔀 نوع انتخاب پروکسی
