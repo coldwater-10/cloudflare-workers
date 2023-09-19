@@ -539,6 +539,12 @@ rule-providers:
     url: https://raw.githubusercontent.com/coldwater-10/clash_rules/main/ads%20ip.yaml
     path: ./ruleset/adsip.yaml
     interval: 432000
+  PersianBlocker:
+    type: http
+    behavior: domain
+    url: "https://github.com/MasterKia/iran-hosted-domains/releases/latest/download/clash_rules_ads.yaml"
+    path: ./ruleset/PersianBlocker.yaml
+    interval: 432000
   Purification_ip:
     type: http
     behavior: classical
@@ -777,6 +783,7 @@ rules:
   - GEOSITE,win-spy,🛑 رهگیری جهانی
   - RULE-SET,Global,🛑 رهگیری جهانی
   - RULE-SET,iran_ads,🆎 تبلیغات
+  - RULE-SET,PersianBlocker,🆎 تبلیغات
   - RULE-SET,ads_ip,🆎 تبلیغات,no-resolve
   - GEOSITE,category-ads-all,🆎 تبلیغات 
   - RULE-SET,category_ads_all,🆎 تبلیغات
