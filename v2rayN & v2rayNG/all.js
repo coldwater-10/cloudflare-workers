@@ -3,17 +3,17 @@ const maxPerType = 600
 const includeOriginalConfigs = 0
 
 const subLinks = [
-  "https://raw.githubusercontent.com/coldwater-10/V2ray-Configs/main/Splitted-By-Protocol/trojan.txt",
-  "https://raw.githubusercontent.com/coldwater-10/V2ray-Configs/main/Splitted-By-Protocol/ss.txt",
-  "https://raw.githubusercontent.com/coldwater-10/V2Hub/main/Split/Base64/shadowsocks",
-  "https://raw.githubusercontent.com/coldwater-10/V2Hub2/main/Split/Base64/vmess",
-  "https://raw.githubusercontent.com/coldwater-10/V2Hub2/main/Split/Base64/trojan"
+  "https://raw.githubusercontent.com/coldwater-10/V2Hub4/main/Split/Base64/vmess",
+  "https://raw.githubusercontent.com/coldwater-10/V2Hub4/main/Split/Base64/trojan",
+  "https://raw.githubusercontent.com/coldwater-10/V2Hub4/main/Split/Base64/shadowsocks",
+  "https://raw.githubusercontent.com/coldwater-10/V2Hub3/main/Split/Base64/vmess",
+  "https://raw.githubusercontent.com/coldwater-10/V2Hub3/main/Split/Base64/trojan",
+  "https://raw.githubusercontent.com/coldwater-10/V2Hub3/main/Split/Base64/shadowsocks"
 ]
 const cnfLinks = [
-  "https://raw.githubusercontent.com/coldwater-10/V2ray-Configs/main/Splitted-By-Protocol/vmess.txt",
-  "https://raw.githubusercontent.com/coldwater-10/V2rayCollector/main/vmess_iran.txt",
-  "https://raw.githubusercontent.com/coldwater-10/V2rayCollector/main/trojan_iran.txt",
-  "https://raw.githubusercontent.com/coldwater-10/V2rayCollector/main/ss_iran.txt"
+  "https://raw.githubusercontent.com/coldwater-10/V2ray-Config/main/Splitted-By-Protocol/vmess.txt",
+  "https://raw.githubusercontent.com/coldwater-10/V2ray-Config/main/Splitted-By-Protocol/trojan.txt",
+  "https://raw.githubusercontent.com/coldwater-10/V2ray-Config/main/Splitted-By-Protocol/ss.txt"
 ]
 const cleanIPLink = "https://raw.githubusercontent.com/coldwater-10/clash_rules/main/List%20of%20clean%20IPs.txt"
 const operatorList = ["AST", "HWB", "IRC", "MBT", "MCI", "MKB", "PRS", "RTL", "SHT", "ZTL", "PIS", "DAT", "SAB", "ASR", "FAN", "ZTL", "SFR", "DID", "LAY", "MAH", "TAK", "PET", "AND", "RES", "AFR", "ARA", "SAM", "APT", "ALL", "PLUS", "TEST", "ENG", "FA", "IPV6", "IRCF", "ANTY"]
